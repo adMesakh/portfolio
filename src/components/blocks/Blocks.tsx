@@ -1,4 +1,6 @@
-import type { Block } from "@/content/types";
+import Image from "next/image";
+import type { Block, Figure } from "@/content/types";
+import { imageSizes } from "@/content/images";
 
 export function Blocks({ blocks }: { blocks: Block[] }) {
   return (
@@ -17,6 +19,26 @@ function BlockHeading({ children }: { children?: string }) {
 
 function BlockView({ block }: { block: Block }) {
   switch (block.kind) {
+    case "figure":
+      return <FigureView fig={block.image} wide={block.wide} />;
+
+    case "gallery":
+      return (
+        <figure className="max-w-[60rem]">
+          <div
+            className={
+              "grid gap-4 items-start " +
+              (block.images.length >= 3 ? "sm:grid-cols-3" : block.images.length === 2 ? "sm:grid-cols-2" : "max-w-[34rem]")
+            }
+          >
+            {block.images.map((f) => (
+              <FigureView key={f.src} fig={f} inGallery />
+            ))}
+          </div>
+          {block.caption && <figcaption className="meta mt-3 max-w-[44rem]">{block.caption}</figcaption>}
+        </figure>
+      );
+
     case "scene":
       return (
         <p
@@ -193,5 +215,51 @@ function Converge({ block }: { block: Extract<Block, { kind: "converge" }> }) {
       </div>
       <figcaption className="meta mt-3 max-w-[44rem]">{block.caption}</figcaption>
     </figure>
+  );
+}
+
+function FigureView({ fig, wide, inGallery }: { fig: Figure; wide?: boolean; inGallery?: boolean }) {
+  const size = imageSizes[fig.src];
+  if (!size) throw new Error(`Missing image size for ${fig.src}`);
+  const isRecreation = fig.kind === "recreation";
+  const Wrap = inGallery ? "div" : "figure";
+  // Size by shape: tall phone screens and small UI crops shouldn't fill the column.
+  const portrait = size.h / size.w > 1.4;
+  const small = size.w < 1200;
+  const width = wide ? "max-w-none" : portrait ? "max-w-[20rem]" : small ? "max-w-[34rem]" : "max-w-[60rem]";
+  return (
+    <Wrap className={inGallery ? (portrait ? "max-w-[18rem] w-full" : "w-full") : width}>
+      <a
+        href={fig.src}
+        target="_blank"
+        rel="noopener"
+        className="group relative block overflow-hidden border border-[var(--line)] bg-[color-mix(in_srgb,var(--bg)_60%,#fff)]"
+        aria-label={`${fig.alt} (opens full size)`}
+      >
+        <Image
+          src={fig.src}
+          alt={fig.alt}
+          width={size.w}
+          height={size.h}
+          sizes={inGallery ? "(min-width: 64rem) 20rem, (min-width: 40rem) 45vw, 100vw" : "(min-width: 64rem) 60rem, 100vw"}
+          className="block w-full h-auto transition-transform duration-300 group-hover:scale-[1.01] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
+        />
+        {isRecreation && (
+          <span className="absolute left-2 top-2 bg-[var(--color-ink)]/85 text-[#eef0ec] text-[0.6875rem] leading-none px-2 py-1.5 rounded-[2px]">
+            Recreation, sample data
+          </span>
+        )}
+      </a>
+      {(fig.caption || !inGallery) && (
+        <figcaption className="meta mt-2.5 max-w-[44rem] text-[0.875rem]">
+          {fig.caption}
+          {isRecreation && !inGallery && (
+            <span className="block text-[0.8125rem] mt-1 opacity-80">
+              Redrawn from the original Figma design with sample data; not a production screenshot.
+            </span>
+          )}
+        </figcaption>
+      )}
+    </Wrap>
   );
 }

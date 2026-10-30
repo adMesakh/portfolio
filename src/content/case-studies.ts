@@ -63,8 +63,14 @@ export const caseStudies: CaseStudy[] = [
             kind: "points",
             intro: "Three things kept visitors from acting:",
             items: [
-              { title: "Unclear value", body: "Pages led with product names — OCA Interaction, OCA Blast, OCA AI — that meant nothing to a first-time visitor." },
-              { title: "A broken journey", body: "The path from Home to Pricing or Registration was inconsistent, and the call to action was easy to misread." },
+              {
+                title: "Unclear value",
+                body: "Pages led with product names — OCA Interaction, OCA Blast, OCA AI — that meant nothing to a first-time visitor.",
+              },
+              {
+                title: "A broken journey",
+                body: "The path from Home to Pricing or Registration was inconsistent, and the call to action was easy to misread.",
+              },
               { title: "Weak mobile", body: "Layout, navigation and performance didn't hold up on phones, where many visitors arrive first." },
             ],
           },
@@ -89,20 +95,34 @@ export const caseStudies: CaseStudy[] = [
         blocks: [
           {
             kind: "table",
-            intro:
-              "We started from what we already knew, treated it as a hypothesis, and checked it against data before designing anything.",
+            intro: "We started from what we already knew, treated it as a hypothesis, and checked it against data before designing anything.",
             columns: ["Source", "What it showed"],
             rows: [
-              ["UX audits and a 2023 heuristic evaluation", "Visual and component inconsistency between pages. Inefficient navigation, worst on mobile. CTAs that confused rather than guided."],
-              ["Designers' observations", "The area above the fold didn't say what OCA does or why it matters. The route from Home to Pricing or Registration was inconsistent."],
+              [
+                "UX audits and a 2023 heuristic evaluation",
+                "Visual and component inconsistency between pages. Inefficient navigation, worst on mobile. CTAs that confused rather than guided.",
+              ],
+              [
+                "Designers' observations",
+                "The area above the fold didn't say what OCA does or why it matters. The route from Home to Pricing or Registration was inconsistent.",
+              ],
               ["Analytics (2023–2024)", "Product, Pricing and Contact Us below 5% conversion with high bounce. Page speed and mobile performance below par."],
             ],
           },
           {
             kind: "prose",
             body: [
-              "We also benchmarked how regional CPaaS competitors tell proof stories — blogs versus customer stories — because \"does this work for a company like mine?\" was a question our site never answered.",
+              'We also benchmarked how regional CPaaS competitors tell proof stories — blogs versus customer stories — because "does this work for a company like mine?" was a question our site never answered.',
             ],
+          },
+          {
+            kind: "figure",
+            image: {
+              src: "/work/oca-dtp-revamp/benchmark.webp",
+              alt: "FigJam board benchmarking blog and customer-story pages from regional CPaaS competitors",
+              caption: "Process artifact. Benchmark of how regional CPaaS competitors present blogs and customer stories.",
+              kind: "artifact",
+            },
           },
         ],
       },
@@ -116,6 +136,15 @@ export const caseStudies: CaseStudy[] = [
               "Marketing needed the value proposition and a conversion funnel. Product needed a smoother path from exploring to registering. Engineering needed ideas they could build without slowing the site down. A single How Might We workshop turned those into one problem; every idea went onto an impact–feasibility matrix and only the high-impact, high-feasibility ones survived. Later, a dot-voting session with the product team picked each product's hero features.",
               "One tension shaped every later decision: SMEs want to register and try on their own, enterprises want to talk to sales. Every page needed two exits.",
             ],
+          },
+          {
+            kind: "figure",
+            image: {
+              src: "/work/oca-dtp-revamp/dot-voting.webp",
+              alt: "Dot-voting board with sticky notes for Blast, AI and Interaction features",
+              caption: "Process artifact. Dot-voting with the product team to pick each product's hero features.",
+              kind: "artifact",
+            },
           },
           {
             kind: "quote",
@@ -132,7 +161,19 @@ export const caseStudies: CaseStudy[] = [
             steps: ["Awareness", "Consideration", "Trial sign-up", "Paid purchase", "Sales & demo", "Activation", "Retention"],
             highlight: [0, 4],
             highlightLabel: "Where the website does the work",
-            caption: "The visitor journey we mapped, with acquisition split into its three doors. For each stage we recorded actions, touchpoints, pain points, back-stage work and opportunities.",
+            caption:
+              "The visitor journey we mapped, with acquisition split into its three doors. For each stage we recorded actions, touchpoints, pain points, back-stage work and opportunities.",
+          },
+          {
+            kind: "figure",
+            image: {
+              src: "/work/oca-dtp-revamp/journey-map.webp",
+              alt: "FigJam journey map with seven stages and eight lanes from user action to opportunity",
+              caption:
+                "Process artifact. The working journey map: seven stages across user action, goals, touchpoints, experience, pain points, back stage and opportunity.",
+              kind: "artifact",
+            },
+            wide: true,
           },
           {
             kind: "compare",
@@ -141,10 +182,31 @@ export const caseStudies: CaseStudy[] = [
             caption: "Fewer, buyer-facing labels. Pricing is one click away, and both exits — talk to sales, or start a free trial — are always visible.",
           },
           {
+            kind: "figure",
+            image: {
+              src: "/work/oca-dtp-revamp/sitemap.webp",
+              alt: "Full sitemap of the new OCA website in FigJam",
+              caption:
+                "Process artifact. The new information architecture: navbar, homepage, product pages, solutions by industry and by team, pricing and resources. Open it full size to read.",
+              kind: "artifact",
+            },
+            wide: true,
+          },
+          {
             kind: "prose",
             body: [
               "The user flow then gave each door its own path. Trial and paid users both land on the dashboard, and a failed payment drops the buyer into a trial instead of a dead end. Sales leads are routed and tracked against an SLA, so a slow follow-up raises an alert.",
             ],
+          },
+          {
+            kind: "figure",
+            image: {
+              src: "/work/oca-dtp-revamp/user-flow.webp",
+              alt: "Detailed user flow from traffic sources through trial, purchase and contact-sales paths",
+              caption: "Process artifact. The detailed user flow. Purple boxes mark new or adjusted steps.",
+              kind: "artifact",
+            },
+            wide: true,
           },
         ],
       },
@@ -156,13 +218,54 @@ export const caseStudies: CaseStudy[] = [
             kind: "table",
             columns: ["Decision", "What changed", "Problem"],
             rows: [
-              ["Lead with what it does", "Products presented by capability, in words buyers already use — \"Omnichannel CRM\" rather than internal names.", "Unclear value"],
-              ["Five value pillars", "OCA's strongest features regrouped into five enterprise promises, each with the features that prove it.", "Unclear value"],
+              [
+                "Lead with what it does",
+                'Products presented by capability, in words buyers already use — "Omnichannel CRM" rather than internal names.',
+                "Unclear value",
+              ],
+              [
+                "Five value pillars",
+                "OCA's strongest features regrouped into five enterprise promises, each with the features that prove it.",
+                "Unclear value",
+              ],
               ["One page template", "Every product page follows the same order, so visitors learn the pattern once.", "Hard journey"],
               ["Plan comparison", "Feature comparison between plans on desktop and mobile.", "Hard journey"],
               ["FAQ on every page", "Common buying questions answered before a visitor has to contact sales.", "Hard journey"],
               ["Customer stories", "Real case studies and measurable outcomes in place of a blog list and one testimonial.", "Low trust"],
             ],
+          },
+
+          {
+            kind: "figure",
+            image: {
+              src: "/work/oca-dtp-revamp/before-after-hero.webp",
+              alt: "Before and after of the OCA homepage hero, annotated",
+              caption:
+                "Before and after: first impression. The new hero names the category and offers two paths — talk to sales or a 14-day trial with no card.",
+              kind: "artifact",
+            },
+            wide: true,
+          },
+          {
+            kind: "figure",
+            image: {
+              src: "/work/oca-dtp-revamp/before-after-explain.webp",
+              alt: "Before and after of how the homepage explains OCA, annotated",
+              caption:
+                "Before and after: explaining what OCA does. A list of product names with stock illustrations became value pillars and solution tabs with real product UI.",
+              kind: "artifact",
+            },
+            wide: true,
+          },
+          {
+            kind: "figure",
+            image: {
+              src: "/work/oca-dtp-revamp/before-after-proof.webp",
+              alt: "Before and after of the proof sections, annotated",
+              caption: "Before and after: proof. Blog posts and one testimonial became customer stories with outcomes and an FAQ.",
+              kind: "artifact",
+            },
+            wide: true,
           },
         ],
       },
@@ -175,6 +278,15 @@ export const caseStudies: CaseStudy[] = [
             body: [
               "We recruited marketing managers, customer-service managers and business owners who knew SaaS tools but had never used OCA: five people across six sessions, four on desktop and two on mobile. Each played a role — a CS manager looking for an inbox, or a team lead looking for a broadcast tool — and worked through five tasks.",
             ],
+          },
+          {
+            kind: "figure",
+            image: {
+              src: "/work/oca-dtp-revamp/ut-plan.webp",
+              alt: "Usability test plan board with target users, goals, five tasks and scenarios",
+              caption: "Process artifact. The test plan: target users, goals, five tasks, and a scenario, metric and screen for each, in two persona variants.",
+              kind: "artifact",
+            },
           },
           {
             kind: "table",
@@ -191,7 +303,10 @@ export const caseStudies: CaseStudy[] = [
             kind: "points",
             heading: "What broke",
             items: [
-              { title: "Contact felt risky", body: "The button was easy to see, but people weren't sure if it led to sales or support. One would rather ask a chatbot than leave details, and dropped the task." },
+              {
+                title: "Contact felt risky",
+                body: "The button was easy to see, but people weren't sure if it led to sales or support. One would rather ask a chatbot than leave details, and dropped the task.",
+              },
               { title: "Pricing on mobile", body: "Product tabs above the plan cards made people misjudge how many products exist." },
               { title: "Trial friction", body: "A required company-name field felt like a privacy cost, and nobody knew what happens after 14 days." },
             ],
@@ -206,7 +321,7 @@ export const caseStudies: CaseStudy[] = [
             kind: "table",
             columns: ["Finding", "Next iteration"],
             rows: [
-              ["Contact reads as \"talk to sales\"", "Say who answers and what happens next; offer a chatbot path for quick questions."],
+              ['Contact reads as "talk to sales"', "Say who answers and what happens next; offer a chatbot path for quick questions."],
               ["Mobile pricing tabs confuse", "Make the product switch explicit and show that price differs per product."],
               ["Trial sign-up feels costly", "Make company name optional; say what happens after 14 days."],
               ["Extra scrolling on mobile", "Bring key answers higher on the page."],
@@ -277,8 +392,19 @@ export const caseStudies: CaseStudy[] = [
         blocks: [
           {
             kind: "compare",
-            before: { label: "Before — per-squad", items: ["A designer per squad", "Priorities set squad by squad", "Patterns re-solved per product", "Handoff and QA by individual habit"] },
-            after: { label: "After — Design Hub", items: ["One team serving five squads", "One intake and shared priorities", "Patterns solved once, documented as journeys", "Same handoff and QA steps for everyone"] },
+            before: {
+              label: "Before — per-squad",
+              items: ["A designer per squad", "Priorities set squad by squad", "Patterns re-solved per product", "Handoff and QA by individual habit"],
+            },
+            after: {
+              label: "After — Design Hub",
+              items: [
+                "One team serving five squads",
+                "One intake and shared priorities",
+                "Patterns solved once, documented as journeys",
+                "Same handoff and QA steps for everyone",
+              ],
+            },
             caption: "The organisational change. Designers still work closely with squads; the hub decides how the work flows.",
           },
           {
@@ -301,10 +427,19 @@ export const caseStudies: CaseStudy[] = [
           {
             kind: "points",
             items: [
-              { title: "Components vs patterns", body: "The design system holds components — the building blocks. The pattern library holds solutions to recurring problems, documented end to end: click Export → drawer → request report → notification → download." },
-              { title: "Dashboard patterns", body: "Because OCA is mostly dense B2B screens, the library focuses on what every dashboard needs: user management, search, filters, bulk actions, permissions, empty and error states, export and notifications." },
+              {
+                title: "Components vs patterns",
+                body: "The design system holds components — the building blocks. The pattern library holds solutions to recurring problems, documented end to end: click Export → drawer → request report → notification → download.",
+              },
+              {
+                title: "Dashboard patterns",
+                body: "Because OCA is mostly dense B2B screens, the library focuses on what every dashboard needs: user management, search, filters, bulk actions, permissions, empty and error states, export and notifications.",
+              },
               { title: "Guidelines in Figma", body: "File structure, naming and documentation rules so any designer can pick up another's file." },
-              { title: "Audits with evidence", body: "UX audits use one format — evidence, finding, severity, recommendation, ideally with a screenshot — so findings can be prioritised alongside engineering work." },
+              {
+                title: "Audits with evidence",
+                body: "UX audits use one format — evidence, finding, severity, recommendation, ideally with a screenshot — so findings can be prioritised alongside engineering work.",
+              },
             ],
           },
         ],
@@ -329,8 +464,17 @@ export const caseStudies: CaseStudy[] = [
           {
             kind: "prose",
             body: [
-              "The website revamp is a good snapshot. Three UI designers took desktop and mobile; the UX writer wrote the copy and the usability-test scenarios; one designer owned the test report; I owned the problem framing, the IA and the research plan. Nobody was \"the Blast designer\" or \"the website designer\" — the work was split by what it needed, and everyone followed the same review, handoff and QA steps.",
+              'The website revamp is a good snapshot. Three UI designers took desktop and mobile; the UX writer wrote the copy and the usability-test scenarios; one designer owned the test report; I owned the problem framing, the IA and the research plan. Nobody was "the Blast designer" or "the website designer" — the work was split by what it needed, and everyone followed the same review, handoff and QA steps.',
             ],
+          },
+          {
+            kind: "figure",
+            image: {
+              src: "/work/oca-dtp-revamp/dot-voting.webp",
+              alt: "Dot-voting board covering Blast, AI and Interaction",
+              caption: "One session, three products: the hub ran a single dot-voting exercise across Blast, AI and Interaction instead of three separate ones.",
+              kind: "artifact",
+            },
           },
         ],
       },
@@ -415,8 +559,30 @@ export const caseStudies: CaseStudy[] = [
             ],
           },
           {
+            kind: "figure",
+            image: {
+              src: "/work/oca-interaction/inbox.webp",
+              alt: "Inbox with a queue split by Queue, Assigned and Done, SLA timers, and a WhatsApp conversation with a ticket and Resolve button",
+              caption: "The inbox: a queue split by status with SLA timers, the conversation in the middle, the ticket and resolve action at the top.",
+              kind: "recreation",
+            },
+          },
+          {
+            kind: "gallery",
+            images: [
+              { src: "/work/oca-interaction/assigned-sla.webp", alt: "Assigned conversation card showing an SLA timer, priority and tags", kind: "recreation" },
+            ],
+          },
+          {
             kind: "sequence",
-            steps: ["Message arrives on any channel", "Lands in one queue", "Assigned to an agent", "SLA timer runs", "Resolved or turned into a ticket", "CSAT survey"],
+            steps: [
+              "Message arrives on any channel",
+              "Lands in one queue",
+              "Assigned to an agent",
+              "SLA timer runs",
+              "Resolved or turned into a ticket",
+              "CSAT survey",
+            ],
             caption: "A simplified life of a conversation in Interaction, drawn from the product's core features.",
           },
         ],
@@ -456,6 +622,30 @@ export const caseStudies: CaseStudy[] = [
           {
             kind: "prose",
             body: ["About 9–10% of all users used AI Assistant in its first week."],
+          },
+          {
+            kind: "gallery",
+            images: [
+              {
+                src: "/work/oca-interaction/ai-suggested-reply.webp",
+                alt: "Suggested reply card inside a conversation with use, improve and translate actions",
+                caption: "Reply suggestion inside the conversation.",
+                kind: "recreation",
+              },
+              {
+                src: "/work/oca-interaction/ai-translate.webp",
+                alt: "Customer message translated from English to Indonesian by AI",
+                caption: "AI translation.",
+                kind: "recreation",
+              },
+              {
+                src: "/work/oca-interaction/ai-summary.webp",
+                alt: "Chat summary card listing three key points of a long conversation",
+                caption: "Chat summary.",
+                kind: "recreation",
+              },
+            ],
+            caption: "The AI Assistant features, redrawn from the original design with sample data.",
           },
         ],
       },
@@ -513,17 +703,45 @@ export const caseStudies: CaseStudy[] = [
         blocks: [
           {
             kind: "sequence",
-            steps: ["Onboarding", "Register, OTP, PIN", "Personal data, step by step", "Guided ID, selfie & NPWP capture", "Bank account check", "Video call verification", "Agreement & done"],
+            steps: [
+              "Onboarding",
+              "Register, OTP, PIN",
+              "Personal data, step by step",
+              "Guided ID, selfie & NPWP capture",
+              "Bank account check",
+              "Video call verification",
+              "Agreement & done",
+            ],
             caption: "The full onboarding and KYC sequence as designed.",
           },
           {
             kind: "points",
             intro: "Four decisions did most of the work behind an 80%+ completion rate:",
             items: [
-              { title: "One document per step", body: "ID card, selfie holding the ID, NPWP and other documents each get their own screen, so the user only ever faces one task." },
+              {
+                title: "One document per step",
+                body: "ID card, selfie holding the ID, NPWP and other documents each get their own screen, so the user only ever faces one task.",
+              },
               { title: "A camera that guides", body: "A frame on the camera shows exactly where the document should sit, so the photo passes the first time." },
-              { title: "Preview before sending", body: "Users see their photo before it's submitted and can retake it — catching blurry shots before a reviewer does." },
-              { title: "Errors that say what went wrong", body: "Bank verification can fail for several reasons, and each one has its own message, so people know what to fix instead of starting over." },
+              {
+                title: "Preview before sending",
+                body: "Users see their photo before it's submitted and can retake it — catching blurry shots before a reviewer does.",
+              },
+              {
+                title: "Errors that say what went wrong",
+                body: "Bank verification can fail for several reasons, and each one has its own message, so people know what to fix instead of starting over.",
+              },
+            ],
+          },
+          {
+            kind: "gallery",
+            images: [
+              {
+                src: "/work/vestia/kyc-camera.webp",
+                alt: "Guided camera screen framing an ID card with a detection confirmation",
+                caption: "The guided camera: a frame for the ID card and instant feedback when it's detected.",
+                kind: "recreation",
+              },
             ],
           },
         ],
@@ -537,6 +755,24 @@ export const caseStudies: CaseStudy[] = [
             body: [
               "On the lender side, the marketplace presents each loan as a story card: the SME, a photo of the borrower and how much of the loan is already funded. A lender chooses a business they understand, not a row in a table. Behind it sit a portfolio dashboard and Rekening Vestia, the wallet, with a full transaction history.",
               "Vestia grew from zero to more than 1,000 lenders, including 20+ company and super lenders.",
+            ],
+          },
+
+          {
+            kind: "gallery",
+            images: [
+              {
+                src: "/work/vestia/loan-card.webp",
+                alt: "Loan story card for a small shop with funding progress and a fund button",
+                caption: "A loan as a story card, with funding progress.",
+                kind: "recreation",
+              },
+              {
+                src: "/work/vestia/portfolio.webp",
+                alt: "Lender portfolio summary with total active funding and a returns chart",
+                caption: "The lender's portfolio view.",
+                kind: "recreation",
+              },
             ],
           },
         ],
@@ -605,7 +841,14 @@ export const caseStudies: CaseStudy[] = [
         blocks: [
           {
             kind: "sequence",
-            steps: ["Download the day's data", "Center → group → debtor", "Record payment & attendance", "Capture deposit slip with photo", "Upload collection sheet", "Admin confirms"],
+            steps: [
+              "Download the day's data",
+              "Center → group → debtor",
+              "Record payment & attendance",
+              "Capture deposit slip with photo",
+              "Upload collection sheet",
+              "Admin confirms",
+            ],
             highlight: [1, 3],
             highlightLabel: "No connection needed",
             caption: "The collection loop across the mobile app and the web back office.",
@@ -615,6 +858,23 @@ export const caseStudies: CaseStudy[] = [
             body: [
               "The home screen is built around one button: Unduh Data — download the data. Officers pull their day before they leave, work offline in the field, and upload when they're back in range. Inside, the app follows the way officers already think: center, then group, then a card per debtor, with anyone in arrears flagged in red. Recording a visit happens in a bottom sheet — payment status, attendance and any titipan — so the officer never loses their place in the list.",
               "Deposit slips get a photo as proof, the destination account and amount, and whether the money is the officer's own collection or carried for another officer. When the admin confirms a deposit, the officer gets a notification — closing a loop that used to happen on paper.",
+            ],
+          },
+          {
+            kind: "gallery",
+            images: [
+              {
+                src: "/work/dmb-collection/debtor-list.webp",
+                alt: "Account officer debtor list for a group with arrears flags, an offline notice and an Upload Collection Sheet button",
+                caption: "A group's debtors, with arrears flagged and the upload button at the bottom.",
+                kind: "recreation",
+              },
+              {
+                src: "/work/dmb-collection/payment-sheet.webp",
+                alt: "Bottom sheet for recording a payment with status, amount and attendance",
+                caption: "Recording a visit in a bottom sheet: payment status, amount and attendance.",
+                kind: "recreation",
+              },
             ],
           },
         ],
@@ -663,9 +923,23 @@ export const caseStudies: CaseStudy[] = [
             ],
           },
           {
+            kind: "gallery",
+            images: [
+              {
+                src: "/work/dmb-collection/deposit-approval.webp",
+                alt: "Deposit authorisation card with the slip photo, officer, amount and approve or reject buttons",
+                caption: "Deposit approval in the back office.",
+                kind: "recreation",
+              },
+            ],
+          },
+          {
             kind: "points",
             items: [
-              { title: "Operations", body: "Dashboard split into regular and arrears, deposit approval, deposit slips, reports, bank accounts and data import." },
+              {
+                title: "Operations",
+                body: "Dashboard split into regular and arrears, deposit approval, deposit slips, reports, bank accounts and data import.",
+              },
               { title: "Master data", body: "Regions, units, centers, marketing, regular and arrears collection sheets." },
               { title: "Control", body: "Users, audit trail and area admins." },
               { title: "Imports and reports", body: "Every import keeps a history and status per file; nominative and message reports can be downloaded." },
@@ -711,7 +985,7 @@ export const caseStudies: CaseStudy[] = [
         blocks: [
           {
             kind: "scene",
-            text: "A marketing team schedules a WhatsApp promo to every customer in its database. One wrong variable and ten thousand people receive \"Hi {first_name}\". There's no undo on a broadcast — so the interface has to make the right thing easy and the wrong thing visible before the send button.",
+            text: 'A marketing team schedules a WhatsApp promo to every customer in its database. One wrong variable and ten thousand people receive "Hi {first_name}". There\'s no undo on a broadcast — so the interface has to make the right thing easy and the wrong thing visible before the send button.',
           },
           {
             kind: "prose",
@@ -738,6 +1012,15 @@ export const caseStudies: CaseStudy[] = [
               "The step I care about most is the one that doesn't create anything: Review Broadcast. Before a campaign goes out, the sender sees the message the way recipients will, in a WhatsApp preview, and checks the details one last time. It's where mistakes get caught, which is the whole point of a review.",
             ],
           },
+          {
+            kind: "figure",
+            image: {
+              src: "/work/oca-blast/review-broadcast.webp",
+              alt: "New WhatsApp broadcast flow with steps and a phone preview of the message",
+              caption: "The broadcast builder, with its steps across the top and a WhatsApp preview of the message on the right.",
+              kind: "recreation",
+            },
+          },
         ],
       },
       {
@@ -747,10 +1030,28 @@ export const caseStudies: CaseStudy[] = [
           {
             kind: "points",
             items: [
-              { title: "Projects", body: "Campaigns live inside projects, so a team running many campaigns can group them by client, product or season and find them again." },
-              { title: "Quotas", body: "Remaining quota is always visible, with international quota broken out separately — because sending abroad costs differently and nobody likes surprises on the bill." },
+              {
+                title: "Projects",
+                body: "Campaigns live inside projects, so a team running many campaigns can group them by client, product or season and find them again.",
+              },
+              {
+                title: "Quotas",
+                body: "Remaining quota is always visible, with international quota broken out separately — because sending abroad costs differently and nobody likes surprises on the bill.",
+              },
               { title: "Contact groups and files", body: "Audiences and uploaded files are managed in their own spaces rather than re-uploaded every time." },
               { title: "Reporting", body: "Every campaign has its own report, so the next campaign can learn from the last." },
+            ],
+          },
+
+          {
+            kind: "gallery",
+            images: [
+              {
+                src: "/work/oca-blast/quota.webp",
+                alt: "Remaining quota card with marketing and utility quota and a breakdown by country",
+                caption: "Remaining quota, with international quota broken out per country.",
+                kind: "recreation",
+              },
             ],
           },
         ],
@@ -770,8 +1071,7 @@ export const caseStudies: CaseStudy[] = [
     headline: "A chatbot builder for teams who don't code",
     standfirst:
       "Enterprise teams wanted chatbots, but every change meant waiting for an engineer. OCA AI turns bot design into a visual canvas. I initiated its design direction from scratch and stayed with it from concept to go-to-market.",
-    summary:
-      "Initiated the design of a no-code visual chatbot builder for enterprise conversational automation, from discovery to go-to-market.",
+    summary: "Initiated the design of a no-code visual chatbot builder for enterprise conversational automation, from discovery to go-to-market.",
     challenge:
       "Make bot design something operations and CS teams can create and maintain themselves — without hiding the logic that makes a bot behave correctly.",
     contribution: [
@@ -809,6 +1109,32 @@ export const caseStudies: CaseStudy[] = [
             body: [
               "The core of OCA AI is a canvas editor. A bot is a flow you can see: blocks connected by lines, each block a step in the conversation. Teams drag a response type onto the canvas, connect it, and open a Bot Response panel to fill in what the bot says. The response types are the vocabulary of the product — the set of things a bot can do — so making that list clear mattered as much as the canvas itself.",
               "The trade-off of no-code is always the same: hide too much and people can't understand why the bot did something; show too much and they're back to programming. A visual flow sits in the middle — the logic is on screen, but nobody has to write it.",
+            ],
+          },
+          {
+            kind: "figure",
+            image: {
+              src: "/work/oca-ai/canvas.webp",
+              alt: "Chatbot flow canvas with start, bot response, user input, condition, AI reply and handoff nodes",
+              caption: "The canvas: a bot is a flow you can see, from start to handoff.",
+              kind: "recreation",
+            },
+          },
+          {
+            kind: "gallery",
+            images: [
+              {
+                src: "/work/oca-ai/response-types.webp",
+                alt: "Response types such as text, button reply, list menu, image, gallery and video being dragged into a bot",
+                caption: "Response types are dragged onto the bot.",
+                kind: "recreation",
+              },
+              {
+                src: "/work/oca-ai/bot-preview.webp",
+                alt: "Phone preview of a chatbot conversation",
+                caption: "Testing the bot as a customer would see it.",
+                kind: "recreation",
+              },
             ],
           },
         ],
@@ -864,6 +1190,17 @@ export const caseStudies: CaseStudy[] = [
             text: "Coconut sap is tapped by farmers, sold to collectors, weighed into a warehouse, cooked down in an oven, sieved, sorted and packed. By the end, a bag of coconut sugar has passed through many hands. The question the factory needed to answer was simple: which ones?",
           },
           {
+            kind: "gallery",
+            images: [
+              {
+                src: "/work/central-agro-lestari/barcode-label.webp",
+                alt: "Product barcode label with type, weight and farmer code",
+                caption: "A barcode label: every product carries its code from intake onward.",
+                kind: "recreation",
+              },
+            ],
+          },
+          {
             kind: "sequence",
             steps: ["Land", "Farmer", "Collector", "Warehouse", "Production", "Packing", "Finished goods"],
             caption: "The traceability chain. Each hand-off is a scan, so a finished product can be traced back to its source.",
@@ -895,11 +1232,30 @@ export const caseStudies: CaseStudy[] = [
           {
             kind: "points",
             items: [
-              { title: "Scan to log in", body: "Workers log in by scanning their employee ID, and a sidebar shows who's active at the station — built for shift changes, not passwords." },
-              { title: "Purchasing", body: "Buying from a seller and buying from a farmer are separate paths; weight, type and quality go in, and a barcode prints immediately." },
-              { title: "Production", body: "Batches per product — powder, liquid and moulded — each with a target. Stages run from adding raw material to oven and evaporation, sieving and sorting, each with start and finish, a progress bar, and a way to hand over to another worker mid-process." },
+              {
+                title: "Scan to log in",
+                body: "Workers log in by scanning their employee ID, and a sidebar shows who's active at the station — built for shift changes, not passwords.",
+              },
+              {
+                title: "Purchasing",
+                body: "Buying from a seller and buying from a farmer are separate paths; weight, type and quality go in, and a barcode prints immediately.",
+              },
+              {
+                title: "Production",
+                body: "Batches per product — powder, liquid and moulded — each with a target. Stages run from adding raw material to oven and evaporation, sieving and sorting, each with start and finish, a progress bar, and a way to hand over to another worker mid-process.",
+              },
               { title: "Packing and finished goods", body: "The last scans in the chain, tying each packed product back to its batch." },
             ],
+          },
+
+          {
+            kind: "figure",
+            image: {
+              src: "/work/central-agro-lestari/production-station.webp",
+              alt: "Production station showing a batch with stage progress and per-employee progress",
+              caption: "A production station: one batch, its stages and who is working on it.",
+              kind: "recreation",
+            },
           },
         ],
       },
@@ -912,6 +1268,17 @@ export const caseStudies: CaseStudy[] = [
             body: [
               "The first link isn't in the factory at all. A mobile admin app records the land: owner, block, number of coconut trees, area, the four boundaries and GPS coordinates, with a button to grab the current location. One question changes the form — is sap tapped here? If yes, the app asks which farmers work the land, how many trees each taps and how much they produce. It also records the last chemical fertiliser and any other crops, the kind of detail an organic audit asks about.",
               "Around the system I also designed the product labels, sized in centimetres for print, the documents and a landing page.",
+            ],
+          },
+          {
+            kind: "gallery",
+            images: [
+              {
+                src: "/work/central-agro-lestari/land-map.webp",
+                alt: "Mobile land record with a map pin, tree count and the farmers who tap it",
+                caption: "A land record in the mobile app: location, trees and the farmers who tap them.",
+                kind: "recreation",
+              },
             ],
           },
         ],

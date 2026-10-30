@@ -52,7 +52,22 @@ export type Block =
       after: { label: string; items: string[] };
       caption: string;
     }
-  | { kind: "quote"; text: string; note?: string };
+  | { kind: "quote"; text: string; note?: string }
+  | { kind: "figure"; image: Figure; wide?: boolean }
+  | { kind: "gallery"; images: Figure[]; caption?: string };
+
+/**
+ * An image in a case study.
+ * - "artifact": a real project artifact (FigJam board, screenshot of the live site).
+ * - "recreation": an interface redrawn from the original Figma design with sample data;
+ *   always labelled as such on the page.
+ */
+export type Figure = {
+  src: string;
+  alt: string;
+  caption?: string;
+  kind: "artifact" | "recreation";
+};
 
 export type Section = {
   /** Short label used in the case-study contents rail. */
