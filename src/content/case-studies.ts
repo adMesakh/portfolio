@@ -118,10 +118,10 @@ export const caseStudies: CaseStudy[] = [
           {
             kind: "figure",
             image: {
-              src: "/work/oca-dtp-revamp/benchmark.webp",
-              alt: "FigJam board benchmarking blog and customer-story pages from regional CPaaS competitors",
-              caption: "Process artifact. Benchmark of how regional CPaaS competitors present blogs and customer stories.",
-              kind: "artifact",
+              src: "/work/oca-dtp-revamp/benchmark-illustration.svg",
+              alt: "Illustration comparing a blog-led proof page with a customer-story-led proof page",
+              caption: "Illustration. The two patterns we compared across regional CPaaS competitors: blog-led proof versus customer stories with a named customer, numbers and a quote. Competitor pages are not shown.",
+              kind: "illustration",
             },
           },
         ],

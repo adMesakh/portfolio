@@ -61,12 +61,13 @@ export type Block =
  * - "artifact": a real project artifact (FigJam board, screenshot of the live site).
  * - "recreation": an interface redrawn from the original Figma design with sample data;
  *   always labelled as such on the page.
+ * - "illustration": a drawing made for this site to explain an idea; contains no real UI or brands.
  */
 export type Figure = {
   src: string;
   alt: string;
   caption?: string;
-  kind: "artifact" | "recreation";
+  kind: "artifact" | "recreation" | "illustration";
 };
 
 export type Section = {

@@ -14,7 +14,7 @@ export const imageSizes: Record<string, { w: number; h: number }> = {
   "/work/oca-dtp-revamp/before-after-explain.webp": { w: 2400, h: 1893 },
   "/work/oca-dtp-revamp/before-after-hero.webp": { w: 2400, h: 1143 },
   "/work/oca-dtp-revamp/before-after-proof.webp": { w: 2400, h: 1882 },
-  "/work/oca-dtp-revamp/benchmark.webp": { w: 2400, h: 1932 },
+  "/work/oca-dtp-revamp/benchmark-illustration.svg": { w: 1600, h: 900 },
   "/work/oca-dtp-revamp/dot-voting.webp": { w: 2400, h: 1472 },
   "/work/oca-dtp-revamp/journey-map.webp": { w: 2400, h: 1462 },
   "/work/oca-dtp-revamp/sitemap.webp": { w: 2400, h: 593 },

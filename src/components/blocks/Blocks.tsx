@@ -242,6 +242,7 @@ function FigureView({ fig, wide, inGallery }: { fig: Figure; wide?: boolean; inG
           width={size.w}
           height={size.h}
           sizes={inGallery ? "(min-width: 64rem) 20rem, (min-width: 40rem) 45vw, 100vw" : "(min-width: 64rem) 60rem, 100vw"}
+          unoptimized={fig.src.endsWith(".svg")}
           className="block w-full h-auto transition-transform duration-300 group-hover:scale-[1.01] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
         />
         {isRecreation && (
