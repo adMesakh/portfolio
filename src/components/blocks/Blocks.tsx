@@ -17,6 +17,16 @@ function BlockHeading({ children }: { children?: string }) {
 
 function BlockView({ block }: { block: Block }) {
   switch (block.kind) {
+    case "scene":
+      return (
+        <p
+          className="max-w-[40rem] text-[clamp(1.3rem,2.2vw,1.65rem)] leading-[1.45] border-l-2 border-[var(--accent)] pl-5"
+          style={{ fontFamily: "var(--font-serif)", fontVariationSettings: '"opsz" 30' }}
+        >
+          {block.text}
+        </p>
+      );
+
     case "prose":
       return (
         <div>
@@ -144,7 +154,7 @@ function Sequence({ block }: { block: Extract<Block, { kind: "sequence" }> }) {
         {block.highlightLabel && (
           <p className="mt-3 text-[0.875rem] flex items-center gap-2">
             <span aria-hidden className="inline-block w-3 h-3 border border-[var(--accent)] bg-[color-mix(in_srgb,var(--accent)_7%,var(--bg))]" />
-            {block.highlightLabel}: steps {a + 1}–{b + 1}
+            {block.highlightLabel}: {a === b ? `step ${a + 1}` : `steps ${a + 1}–${b + 1}`}
           </p>
         )}
       </div>

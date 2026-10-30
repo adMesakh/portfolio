@@ -16,6 +16,8 @@ export type Outcome = {
 };
 
 export type Block =
+  /** An opening scene in large serif, used once at the top of a story. */
+  | { kind: "scene"; text: string }
   | { kind: "prose"; heading?: string; body: string[] }
   | { kind: "points"; heading?: string; intro?: string; items: { title: string; body: string }[] }
   | {
