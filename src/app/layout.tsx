@@ -5,7 +5,7 @@ import { grotesk, serif, serifItalic } from "@/lib/fonts";
 import { Header } from "@/components/Header";
 import { CvDialog } from "@/components/CvRequest";
 import { modeBootScript } from "@/components/ModeToggle";
-import { siteDescription, siteName, siteUrl, nav } from "@/lib/site";
+import { siteDescription, siteName, siteUrl, footerNav } from "@/lib/site";
 import { profile } from "@/content/profile";
 
 export const metadata: Metadata = {
@@ -64,7 +64,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <p className="text-[var(--fg-soft)]">{profile.title}, {profile.location}</p>
             </div>
             <ul className="flex flex-wrap gap-x-6 gap-y-2">
-              {nav.map((n) => (
+              {footerNav.map((n) => (
                 <li key={n.href}>
                   <Link className="link" href={n.href}>
                     {n.label}

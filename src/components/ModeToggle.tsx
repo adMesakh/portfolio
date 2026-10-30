@@ -62,7 +62,7 @@ export function setMode(next: Mode) {
   window.dispatchEvent(new CustomEvent("readingmodechange", { detail: next }));
 }
 
-export function ModeToggle({ compact = false }: { compact?: boolean }) {
+export function ModeToggle() {
   const [mode, setLocal] = useState<Mode>("storytelling");
   const [announce, setAnnounce] = useState("");
 
@@ -79,35 +79,39 @@ export function ModeToggle({ compact = false }: { compact?: boolean }) {
     setAnnounce(m === "editorial" ? "Editorial mode: a two-minute summary." : "Storytelling mode: the full story.");
   };
 
-  const options: { id: Mode; label: string; hint: string }[] = [
-    { id: "storytelling", label: "Storytelling", hint: "Full read" },
-    { id: "editorial", label: "Editorial", hint: "2 min read" },
+  const options: { id: Mode; label: string }[] = [
+    { id: "storytelling", label: "Storytelling" },
+    { id: "editorial", label: "Editorial" },
   ];
 
   return (
-    <div className="flex items-center gap-2">
-      <span className={compact ? "sr-only" : "label hidden xl:inline"} id="mode-label">
-        Reading mode
+    <div className="flex items-center">
+      <span className="sr-only" id="mode-label">
+        Reading mode: Storytelling is the full read, Editorial is a two minute summary
       </span>
-      <div role="group" aria-labelledby="mode-label" className="inline-flex border border-[var(--fg)] rounded-[2px] p-[2px]">
-        {options.map((o) => {
+      <div role="group" aria-labelledby="mode-label" className="flex items-center gap-1 text-[0.9375rem]">
+        {options.map((o, i) => {
           const on = mode === o.id;
           return (
-            <button
-              key={o.id}
-              type="button"
-              aria-pressed={on}
-              onClick={() => choose(o.id)}
-              className={
-                "px-2.5 sm:px-3 py-1.5 text-left rounded-[1px] transition-colors cursor-pointer " +
-                (on ? "bg-[var(--fg)] text-[var(--bg)]" : "hover:text-[var(--accent)]")
-              }
-            >
-              <span className="block text-[0.8125rem] sm:text-[0.875rem] font-[580] leading-tight">{o.label}</span>
-              <span className={"hidden sm:block text-[0.6875rem] leading-tight " + (on ? "opacity-80" : "text-[var(--fg-soft)]")}>
-                {o.hint}
-              </span>
-            </button>
+            <span key={o.id} className="flex items-center gap-1">
+              {i > 0 && (
+                <span aria-hidden className="text-[var(--line)] select-none">
+                  /
+                </span>
+              )}
+              <button
+                type="button"
+                aria-pressed={on}
+                onClick={() => choose(o.id)}
+                title={o.id === "editorial" ? "Two minute summary" : "The full story"}
+                className={
+                  "min-h-11 px-1.5 cursor-pointer transition-colors underline-offset-[6px] decoration-[1.5px] " +
+                  (on ? "text-[var(--fg)] font-[600] underline decoration-[var(--accent)]" : "text-[var(--fg-soft)] hover:text-[var(--fg)]")
+                }
+              >
+                {o.label}
+              </button>
+            </span>
           );
         })}
       </div>

@@ -4,7 +4,15 @@ export const siteName = "Mesakh | UX Lead and Product Designer";
 export const siteDescription =
   "Mesakh is a UX Lead and product designer in Jakarta with 8+ years in B2B SaaS, CPaaS, fintech and banking. Case studies on building products from zero to launch and leading design across five squads at Telkom Indonesia's OCA.";
 
+/** Header: kept to three links. */
 export const nav = [
+  { href: "/work", label: "Work" },
+  { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
+];
+
+/** Footer: the full list. */
+export const footerNav = [
   { href: "/work", label: "Work" },
   { href: "/experience", label: "Experience" },
   { href: "/about", label: "About" },
