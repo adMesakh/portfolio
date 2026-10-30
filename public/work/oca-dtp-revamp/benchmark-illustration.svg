@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
   <title id="t">Two ways to present proof</title>
-  <desc id="d">Abstract illustration comparing a blog-led proof page with a customer-story-led proof page. No real pages or brands are shown.</desc>
+  <desc id="d">Abstract illustration comparing proof through blog posts with proof through customer stories. No real pages or brands are shown.</desc>
   <rect width="1600" height="900" fill="#e2e6e1"/>
 
   <!-- Left: blog-led -->
   <g font-family="Helvetica, Arial, sans-serif" fill="#1b2340">
-    <text x="120" y="110" font-size="30" font-weight="600">Blog-led proof</text>
+    <text x="120" y="110" font-size="30" font-weight="600">Proof through blog posts</text>
     <text x="120" y="146" font-size="22" fill="#4a5268">Articles about the industry; outcomes left to the reader</text>
   </g>
   <g transform="translate(120 190)">
@@ -38,7 +38,7 @@
 
   <!-- Right: story-led -->
   <g font-family="Helvetica, Arial, sans-serif" fill="#1b2340">
-    <text x="860" y="110" font-size="30" font-weight="600">Story-led proof</text>
+    <text x="860" y="110" font-size="30" font-weight="600">Proof through customer stories</text>
     <text x="860" y="146" font-size="22" fill="#4a5268">A customer, a problem and a measurable result</text>
   </g>
   <g transform="translate(860 190)">

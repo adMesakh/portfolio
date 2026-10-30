@@ -81,7 +81,7 @@ export function ModeToggle({ compact = false }: { compact?: boolean }) {
 
   const options: { id: Mode; label: string; hint: string }[] = [
     { id: "storytelling", label: "Storytelling", hint: "Full read" },
-    { id: "editorial", label: "Editorial", hint: "2-min read" },
+    { id: "editorial", label: "Editorial", hint: "2 min read" },
   ];
 
   return (

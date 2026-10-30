@@ -18,11 +18,11 @@ export const profile = {
     /** The statement is split so claims can carry review-style margin notes. */
     statement: [
       { text: "I design the software businesses run on: " },
-      { text: "customer-service inboxes", note: "OCA Interaction. Omnichannel inbox, 2,000+ active users.", href: "/work/oca-interaction" },
+      { text: "customer service inboxes", note: "OCA Interaction. Omnichannel inbox, 2,000+ active users.", href: "/work/oca-interaction" },
       { text: ", " },
-      { text: "lending apps", note: "Vestia. OJK-regulated P2P lending, 0 to 1,000+ lenders.", href: "/work/vestia" },
+      { text: "lending apps", note: "Vestia. OJK regulated P2P lending, 0 to 1,000+ lenders.", href: "/work/vestia" },
       { text: ", " },
-      { text: "field collection tools", note: "DMB. Offline-first collection for group lending.", href: "/work/dmb-collection" },
+      { text: "field collection tools", note: "DMB. Offline first collection for group lending.", href: "/work/dmb-collection" },
       { text: ". I\u00A0also build " },
       { text: "the design teams that ship\u00A0it", note: "Design Hub. One design team serving five squads at OCA.", href: "/work/design-hub" },
       { text: "." },
@@ -47,14 +47,14 @@ export const profile = {
   achievements: [
     { value: "2,000+", text: "active users on OCA Interaction, an omnichannel platform I helped build from concept; the product has passed Rp10B in revenue." },
     { value: "Rp7B → Rp60B+", text: "growth in OCA Blast's annual revenue, a product I've designed for. A team result, with design as one contributor." },
-    { value: "80%+", text: "KYC completion on Vestia, an OJK-regulated P2P lending product that grew from zero to 1,000+ lenders." },
-    { value: "5 squads", text: "supported by one centralised design team, after moving OCA from per-squad designers to a Design Hub." },
+    { value: "80%+", text: "KYC completion on Vestia, an OJK regulated P2P lending product that grew from zero to 1,000+ lenders." },
+    { value: "5 squads", text: "supported by one centralised design team, after moving OCA from per squad designers to a Design Hub." },
     { value: "100%", text: "task success for finding product, pricing and free trial in usability tests of the OCA website revamp, on desktop and mobile." },
   ],
 
   skills: [
-    { group: "Product design", items: ["0→1 product design", "Information architecture", "Interaction design", "Data-dense B2B interfaces", "Mobile, offline-first flows"] },
-    { group: "Research", items: ["UX audits & heuristic evaluation", "Moderated & unmoderated testing (Maze)", "Preference and first-impression tests", "Analytics & event tracking", "Journey mapping"] },
+    { group: "Product design", items: ["0→1 product design", "Information architecture", "Interaction design", "Dense B2B dashboards", "Mobile, offline first flows"] },
+    { group: "Research", items: ["UX audits & heuristic evaluation", "Moderated & unmoderated testing (Maze)", "Preference and first impression tests", "Analytics & event tracking", "Journey mapping"] },
     { group: "Leadership & ops", items: ["Team leadership (up to 10)", "Design Hub operating model", "Design system & UX patterns", "Design QA against staging", "Workflow in Jira & Figma"] },
     { group: "Tools", items: ["Figma, FigJam", "Maze", "Jira", "Notion", "HTML prototyping, Git"] },
   ],
@@ -103,7 +103,7 @@ export const leadership = {
   areas: [
     {
       title: "Operating model",
-      body: "Moved from per-squad resourcing to a centralised Design Hub serving Interaction, AI, Blast & API, Growth and Core. One intake, shared priorities, and designers who see across products.",
+      body: "Moved from per squad resourcing to a centralised Design Hub serving Interaction, AI, Blast & API, Growth and Core. One intake, shared priorities, and designers who see across products.",
     },
     {
       title: "Workflow",
@@ -111,7 +111,7 @@ export const leadership = {
     },
     {
       title: "Design system & patterns",
-      body: "Own the design system, Figma guidelines and a library of UX patterns documented as end-to-end journeys, so a new feature starts from a solved problem.",
+      body: "Own the design system, Figma guidelines and a library of UX patterns documented as end to end journeys, so a new feature starts from a solved problem.",
     },
     {
       title: "Quality",
@@ -127,7 +127,7 @@ export const leadership = {
 export const experience: Employer[] = [
   {
     name: "Telkom Indonesia (OCA)",
-    context: "OCA is Telkom's CPaaS ecosystem: omnichannel customer service, bulk messaging, chatbot automation and messaging APIs for mid-to-large businesses, BUMN and government.",
+    context: "OCA is Telkom's CPaaS ecosystem: omnichannel customer service, bulk messaging, chatbot automation and messaging APIs for mid to large businesses, BUMN and government.",
     location: "Jakarta",
     start: "Dec 2020",
     end: "Present",
@@ -138,7 +138,7 @@ export const experience: Employer[] = [
         end: "Present",
         summary: "Lead the design function for OCA across five squads: Interaction, AI, Blast & API, Growth and Core.",
         points: [
-          "Moved design from per-squad resourcing to a centralised Design Hub with one standard workflow.",
+          "Moved design from per squad resourcing to a centralised Design Hub with one standard workflow.",
           "Own the design system, UX patterns, Figma guidelines and documentation.",
           "Run design QA against staging and regular UX audits.",
           "Led the OCA website (DTP) revamp: research, IA, design and usability testing.",
@@ -152,8 +152,8 @@ export const experience: Employer[] = [
         summary: "Product designer on OCA's core products as they were being built.",
         points: [
           "Helped build OCA Interaction, the omnichannel inbox, from concept.",
-          "Worked on OCA Blast's one-way messaging experience and the OCA landing page.",
-          "Initiated the design direction for OCA AI, a no-code chatbot builder, from concept to go-to-market.",
+          "Worked on OCA Blast's one way messaging experience and the OCA landing page.",
+          "Initiated the design direction for OCA AI, a no code chatbot builder, from concept to market launch.",
         ],
       },
     ],
@@ -183,9 +183,9 @@ export const experience: Employer[] = [
 
 /** Smaller projects shown as an index rather than a case study. */
 export const otherWork = [
-  { title: "BPR Field Collection App", category: "Banking, offline-first", note: "Offline-to-online sync for field officers. The client reported 100% satisfaction." },
+  { title: "BPR Field Collection App", category: "Banking, offline first", note: "Offline to online sync for field officers. The client reported 100% satisfaction." },
   { title: "Field Service App", category: "Operations", note: "Field service workflow redesign; complaints dropped to nearly zero." },
   { title: "AI Assistant in OCA Interaction", category: "GenAI, agent productivity", note: "Reply suggestion, improve text, translation and chat summary. Used by about 9 to 10% of all users in its first week." },
-  { title: "OCA reports", category: "Data-dense UI", note: "WhatsApp Services Report (A/B preference test), WhatsApp Call Report with country quotas for 180+ countries." },
-  { title: "Legion AI audit", category: "UX audit, AI tools", note: "Audit of a prompt-based prototype builder: model picker, limits, provider setup, error and retry states." },
+  { title: "OCA reports", category: "Dense dashboards", note: "WhatsApp Services Report (A/B preference test), WhatsApp Call Report with country quotas for 180+ countries." },
+  { title: "Legion AI audit", category: "UX audit, AI tools", note: "Audit of a prompt based prototype builder: model picker, limits, provider setup, error and retry states." },
 ];
