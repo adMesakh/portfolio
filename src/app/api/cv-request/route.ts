@@ -113,7 +113,7 @@ export async function POST(req: Request) {
       from: cfg.from,
       to: [email],
       reply_to: cfg.notify || undefined,
-      subject: "Mesakh — CV",
+      subject: "CV from Mesakh",
       text: [
         "Hi,",
         "",

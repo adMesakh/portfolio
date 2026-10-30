@@ -10,7 +10,7 @@ import { profile } from "@/content/profile";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: { default: siteName, template: "%s — Mesakh" },
+  title: { default: siteName, template: "%s | Mesakh" },
   description: siteDescription,
   applicationName: "Mesakh",
   authors: [{ name: "Mesakh", url: siteUrl }],

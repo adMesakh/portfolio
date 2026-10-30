@@ -29,7 +29,7 @@ export default function WorkIndex() {
               {e.name}
             </h2>
             <p className="meta lg:col-span-8 max-w-[44rem]">
-              {e.start} – {e.end}. {e.context}
+              {e.start} to {e.end}. {e.context}
             </p>
           </div>
           <ul>

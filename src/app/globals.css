@@ -226,7 +226,7 @@ html[data-mode="editorial"] .only-story {
 
 .note {
   position: relative;
-  padding-left: 1.75rem;
+  padding-left: 1.4rem;
   color: var(--fg-soft);
   font-size: 0.9375rem;
   line-height: 1.45;
@@ -239,6 +239,7 @@ html[data-mode="editorial"] .only-story {
   font-weight: 600;
 }
 .note::before {
+  display: none;
   content: "";
   position: absolute;
   left: 0.9rem;

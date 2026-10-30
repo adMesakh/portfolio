@@ -268,7 +268,7 @@ function StoryHome() {
               From designing screens to running the design function
             </h2>
             <p className="lede mt-5">
-              Two years as a consultant, then six at Telkom's OCA — first as a designer on products being built from scratch, then leading the team that designs all of them.
+              Two years as a consultant, then six at Telkom's OCA: first as a designer on products being built from scratch, then leading the team that designs all of them.
             </p>
             <p className="mt-6">
               <Link href="/experience" className="link font-[560]">
@@ -281,7 +281,7 @@ function StoryHome() {
               e.roles.map((r) => (
                 <li key={e.name + r.title} className="grid gap-2 sm:grid-cols-[9rem_1fr] sm:gap-6 py-6 border-t border-[var(--fg)]/25 first:border-[var(--fg)]">
                   <p className="meta tabular-nums">
-                    {r.start} – {r.end}
+                    {r.start} to {r.end}
                   </p>
                   <div>
                     <p className="font-[600] text-[1.125rem]">{r.title}</p>
@@ -511,7 +511,7 @@ function BriefHome() {
               e.roles.map((r) => (
                 <li key={e.name + r.title} className="grid grid-cols-[10.5rem_1fr] gap-4 py-3 border-b border-[var(--line)] text-[0.9375rem]">
                   <span className="text-[var(--fg-soft)] tabular-nums">
-                    {r.start} – {r.end}
+                    {r.start} to {r.end}
                   </span>
                   <span>
                     <strong className="font-[600]">{r.title}</strong>, {e.name}

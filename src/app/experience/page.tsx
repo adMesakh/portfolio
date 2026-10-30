@@ -32,7 +32,7 @@ export default function ExperiencePage() {
             <div className="lg:col-span-4">
               <h2 className="h2">{e.name}</h2>
               <p className="meta mt-2 tabular-nums">
-                {e.start} – {e.end}, {e.location}
+                {e.start} to {e.end}, {e.location}
               </p>
               <p className="mt-4 text-[var(--fg-soft)] max-w-[28rem] only-story">{e.context}</p>
             </div>
@@ -42,7 +42,7 @@ export default function ExperiencePage() {
                   <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
                     <h3 className="h3">{r.title}</h3>
                     <span className="meta tabular-nums">
-                      {r.start} – {r.end}
+                      {r.start} to {r.end}
                     </span>
                   </div>
                   <p className="mt-2 text-[1.0625rem]">{r.summary}</p>

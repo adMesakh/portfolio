@@ -176,7 +176,7 @@ function Sequence({ block }: { block: Extract<Block, { kind: "sequence" }> }) {
         {block.highlightLabel && (
           <p className="mt-3 text-[0.875rem] flex items-center gap-2">
             <span aria-hidden className="inline-block w-3 h-3 border border-[var(--accent)] bg-[color-mix(in_srgb,var(--accent)_7%,var(--bg))]" />
-            {block.highlightLabel}: {a === b ? `step ${a + 1}` : `steps ${a + 1}–${b + 1}`}
+            {block.highlightLabel}: {a === b ? `step ${a + 1}` : `steps ${a + 1} to ${b + 1}`}
           </p>
         )}
       </div>

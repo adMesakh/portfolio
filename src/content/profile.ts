@@ -4,7 +4,7 @@ export const profile = {
   name: "Mesakh",
   title: "UX Lead & Product Designer",
   location: "Jakarta, Indonesia",
-  availability: "Open to UX Lead, Design Manager and Lead Product Designer roles — remote or relocation.",
+  availability: "Open to UX Lead, Design Manager and Lead Product Designer roles, remote or with relocation.",
   email: "admesakh@gmail.com",
   links: [
     { label: "LinkedIn", href: "https://www.linkedin.com/in/admesakh" },
@@ -17,13 +17,13 @@ export const profile = {
     kicker: "UX Lead and product designer in Jakarta",
     /** The statement is split so claims can carry review-style margin notes. */
     statement: [
-      { text: "I design the software businesses run on — " },
+      { text: "I design the software businesses run on: " },
       { text: "customer-service inboxes", note: "OCA Interaction. Omnichannel inbox, 2,000+ active users.", href: "/work/oca-interaction" },
       { text: ", " },
       { text: "lending apps", note: "Vestia. OJK-regulated P2P lending, 0 to 1,000+ lenders.", href: "/work/vestia" },
       { text: ", " },
       { text: "field collection tools", note: "DMB. Offline-first collection for group lending.", href: "/work/dmb-collection" },
-      { text: " — and build " },
+      { text: ". I\u00A0also build " },
       { text: "the design teams that ship\u00A0it", note: "Design Hub. One design team serving five squads at OCA.", href: "/work/design-hub" },
       { text: "." },
     ] as { text: string; note?: string; href?: string }[],
@@ -33,20 +33,20 @@ export const profile = {
 
   /** Editorial-mode introduction: two sentences, no adjectives. */
   brief:
-    "UX Lead with 8+ years in B2B SaaS, CPaaS, fintech and banking. Leads the design function — UI, research, UX writing, design QA and the design system — across five product squads at Telkom Indonesia's OCA.",
+    "UX Lead with 8+ years in B2B SaaS, CPaaS, fintech and banking. Leads the design function (UI, research, UX writing, design QA and the design system) across five product squads at Telkom Indonesia's OCA.",
 
   /** The professional philosophy, as a short essay. */
   philosophy: {
     headline: "A design is finished when it works in production, not when it looks right in Figma.",
     body: [
       "Most of what I have designed is used under pressure: a support agent juggling chats from WhatsApp, Instagram and email in one queue, an account officer collecting instalments in the field without a reliable connection, a credit admin reconciling deposits at the end of the day. Those people don't need delight. They need the next step to be obvious and the data to be right.",
-      "That shapes how I work. I start from the operation — who does what, in what order, with what constraint — and only then draw screens. I treat engineers as the first users of a design, because a flow that can't be built on time doesn't help anyone. And I try to tie each decision to a number someone already cares about, so design is part of the business conversation rather than a service request at the end of it.",
+      "That shapes how I work. I start from the operation: who does what, in what order, with what constraint. Only then do I draw screens. I treat engineers as the first users of a design, because a flow that can't be built on time doesn't help anyone. And I try to tie each decision to a number someone already cares about, so design is part of the business conversation rather than a service request at the end of it.",
     ],
   },
 
   achievements: [
     { value: "2,000+", text: "active users on OCA Interaction, an omnichannel platform I helped build from concept; the product has passed Rp10B in revenue." },
-    { value: "Rp7B → Rp60B+", text: "growth in OCA Blast's annual revenue, a product I've designed for — a team result, with design as one contributor." },
+    { value: "Rp7B → Rp60B+", text: "growth in OCA Blast's annual revenue, a product I've designed for. A team result, with design as one contributor." },
     { value: "80%+", text: "KYC completion on Vestia, an OJK-regulated P2P lending product that grew from zero to 1,000+ lenders." },
     { value: "5 squads", text: "supported by one centralised design team, after moving OCA from per-squad designers to a Design Hub." },
     { value: "100%", text: "task success for finding product, pricing and free trial in usability tests of the OCA website revamp, on desktop and mobile." },
@@ -61,13 +61,13 @@ export const profile = {
 
   education: [
     { title: "Information Systems (S1)", place: "Universitas Dian Nuswantoro", years: "In progress" },
-    { title: "Guest lecturer — UI/UX, AI in design, accessibility, research validity", place: "Universitas Teknologi Yogyakarta", years: "Invited talks" },
+    { title: "Guest lecturer on UI/UX, AI in design, accessibility and research validity", place: "Universitas Teknologi Yogyakarta", years: "Invited talks" },
   ],
 
   personal: {
     headline: "Outside work, I play piano and take photographs.",
     body: [
-      "Piano is the one place where I practise slowly on purpose: the same few bars, again, until they hold. It's not far from how I like to run a design review — find the step where people stumble and work on that, rather than redrawing everything.",
+      "Piano is the one place where I practise slowly on purpose: the same few bars, again, until they hold. It's not far from how I like to run a design review: find the step where people stumble and work on that, rather than redrawing everything.",
       "I also shoot street, portrait and travel photography, which is mostly an exercise in deciding what to leave out of the frame.",
     ],
   },
@@ -76,7 +76,7 @@ export const profile = {
 export const principles: Principle[] = [
   {
     title: "Start from the operation",
-    body: "Before any screen I map who does what, in what order, under what constraint — a station flowchart for a factory, payment states for a collection app, a journey map for a website. Most UI problems are workflow problems that showed up late.",
+    body: "Before any screen I map who does what, in what order, under what constraint. A station flowchart for a factory, payment states for a collection app, a journey map for a website. Most UI problems are workflow problems that showed up late.",
   },
   {
     title: "Evidence before polish",
@@ -92,7 +92,7 @@ export const principles: Principle[] = [
   },
   {
     title: "Measure the minimum",
-    body: "Event tracking starts from a question and the smallest set of events that answers it — open, submit, success, error — not from instrumenting everything.",
+    body: "Event tracking starts from a question and the smallest set of events that answers it (open, submit, success, error), not from instrumenting everything.",
   },
 ];
 
@@ -107,7 +107,7 @@ export const leadership = {
     },
     {
       title: "Workflow",
-      body: "Standardised the path every request takes — intake, review, handoff, documentation, design QA — and wired it into the team's Jira cadence so status is visible to Product and Engineering.",
+      body: "Standardised the path every request takes (intake, review, handoff, documentation, design QA) and wired it into the team's Jira cadence so status is visible to Product and Engineering.",
     },
     {
       title: "Design system & patterns",
@@ -167,7 +167,7 @@ export const experience: Employer[] = [
     end: "2020",
     roles: [
       {
-        title: "IT Consultant — UI/UX Designer",
+        title: "IT Consultant, UI/UX Designer",
         start: "2018",
         end: "2020",
         summary: "Owned design from requirements to developer handoff on client projects.",
@@ -185,7 +185,7 @@ export const experience: Employer[] = [
 export const otherWork = [
   { title: "BPR Field Collection App", category: "Banking, offline-first", note: "Offline-to-online sync for field officers. The client reported 100% satisfaction." },
   { title: "Field Service App", category: "Operations", note: "Field service workflow redesign; complaints dropped to nearly zero." },
-  { title: "AI Assistant in OCA Interaction", category: "GenAI, agent productivity", note: "Reply suggestion, improve text, translation and chat summary. Used by about 9–10% of all users in its first week." },
+  { title: "AI Assistant in OCA Interaction", category: "GenAI, agent productivity", note: "Reply suggestion, improve text, translation and chat summary. Used by about 9 to 10% of all users in its first week." },
   { title: "OCA reports", category: "Data-dense UI", note: "WhatsApp Services Report (A/B preference test), WhatsApp Call Report with country quotas for 180+ countries." },
   { title: "Legion AI audit", category: "UX audit, AI tools", note: "Audit of a prompt-based prototype builder: model picker, limits, provider setup, error and retry states." },
 ];

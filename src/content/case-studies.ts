@@ -18,14 +18,14 @@ export const caseStudies: CaseStudy[] = [
     slug: "oca-dtp-revamp",
     title: "OCA website revamp",
     org: "Telkom Indonesia (OCA)",
-    years: "2025 – 2026",
+    years: "2025 to 2026",
     category: "B2B website, Information architecture, Research",
     platforms: "Desktop and mobile web",
-    role: "UX Lead — design direction, research plan, team lead",
+    role: "UX Lead: design direction, research plan, team lead",
     team: "Product manager, 3 UI designers, a UX writer, 2 front-end engineers, a marketing PIC",
     headline: "Stop leading with product names",
     standfirst:
-      "OCA's website was the first thing a B2B buyer saw, and it assumed they already knew what OCA Interaction or OCA Blast meant. We rebuilt it around the problems buyers come with — and tested whether they could find their way.",
+      "OCA's website was the first thing a B2B buyer saw, and it assumed they already knew what OCA Interaction or OCA Blast meant. We rebuilt it around the problems buyers come with, then tested whether they could find their way.",
     summary:
       "Led the redesign of OCA's marketing website so it turns B2B visitors into trials and sales leads, rebuilding five key pages around business solutions instead of product names.",
     challenge:
@@ -51,7 +51,7 @@ export const caseStudies: CaseStudy[] = [
         blocks: [
           {
             kind: "scene",
-            text: "A customer-service manager at a mid-size company lands on our homepage. The first thing she reads is a product name — OCA Interaction — that means nothing to her yet. She scrolls, looks for a price, doesn't find one quickly, and leaves. On our key pages, fewer than one visitor in twenty ever took the next step.",
+            text: "A customer-service manager at a mid-size company lands on our homepage. The first thing she reads is a product name, OCA Interaction, that means nothing to her yet. She scrolls, looks for a price, doesn't find one quickly, and leaves. On our key pages, fewer than one visitor in twenty ever took the next step.",
           },
           {
             kind: "prose",
@@ -65,7 +65,7 @@ export const caseStudies: CaseStudy[] = [
             items: [
               {
                 title: "Unclear value",
-                body: "Pages led with product names — OCA Interaction, OCA Blast, OCA AI — that meant nothing to a first-time visitor.",
+                body: "Pages led with product names like OCA Interaction, OCA Blast and OCA AI, which meant nothing to a first-time visitor.",
               },
               {
                 title: "A broken journey",
@@ -106,13 +106,13 @@ export const caseStudies: CaseStudy[] = [
                 "Designers' observations",
                 "The area above the fold didn't say what OCA does or why it matters. The route from Home to Pricing or Registration was inconsistent.",
               ],
-              ["Analytics (2023–2024)", "Product, Pricing and Contact Us below 5% conversion with high bounce. Page speed and mobile performance below par."],
+              ["Analytics (2023 to 2024)", "Product, Pricing and Contact Us below 5% conversion with high bounce. Page speed and mobile performance below par."],
             ],
           },
           {
             kind: "prose",
             body: [
-              'We also benchmarked how regional CPaaS competitors tell proof stories — blogs versus customer stories — because "does this work for a company like mine?" was a question our site never answered.',
+              'We also benchmarked how regional CPaaS competitors tell proof stories, blogs versus customer stories, because "does this work for a company like mine?" was a question our site never answered.',
             ],
           },
           {
@@ -133,7 +133,7 @@ export const caseStudies: CaseStudy[] = [
           {
             kind: "prose",
             body: [
-              "Marketing needed the value proposition and a conversion funnel. Product needed a smoother path from exploring to registering. Engineering needed ideas they could build without slowing the site down. A single How Might We workshop turned those into one problem; every idea went onto an impact–feasibility matrix and only the high-impact, high-feasibility ones survived. Later, a dot-voting session with the product team picked each product's hero features.",
+              "Marketing needed the value proposition and a conversion funnel. Product needed a smoother path from exploring to registering. Engineering needed ideas they could build without slowing the site down. A single How Might We workshop turned those into one problem; every idea went onto an impact and feasibility matrix and only the high-impact, high-feasibility ones survived. Later, a dot-voting session with the product team picked each product's hero features.",
               "One tension shaped every later decision: SMEs want to register and try on their own, enterprises want to talk to sales. Every page needed two exits.",
             ],
           },
@@ -177,9 +177,9 @@ export const caseStudies: CaseStudy[] = [
           },
           {
             kind: "compare",
-            before: { label: "2023 navigation — what OCA owns", items: ["Product", "Solution", "License", "Partnership", "Resources", "About Us"] },
-            after: { label: "Revamp — what the buyer needs", items: ["Produk", "Solusi", "Pusat Informasi", "Harga", "Hubungi Kami", "Coba Gratis"] },
-            caption: "Fewer, buyer-facing labels. Pricing is one click away, and both exits — talk to sales, or start a free trial — are always visible.",
+            before: { label: "2023 navigation: what OCA owns", items: ["Product", "Solution", "License", "Partnership", "Resources", "About Us"] },
+            after: { label: "Revamp: what the buyer needs", items: ["Produk", "Solusi", "Pusat Informasi", "Harga", "Hubungi Kami", "Coba Gratis"] },
+            caption: "Fewer, buyer-facing labels. Pricing is one click away, and both exits (talk to sales, or start a free trial) are always visible.",
           },
           {
             kind: "figure",
@@ -220,7 +220,7 @@ export const caseStudies: CaseStudy[] = [
             rows: [
               [
                 "Lead with what it does",
-                'Products presented by capability, in words buyers already use — "Omnichannel CRM" rather than internal names.',
+                'Products presented by capability, in words buyers already use, like "Omnichannel CRM", instead of internal names.',
                 "Unclear value",
               ],
               [
@@ -241,7 +241,7 @@ export const caseStudies: CaseStudy[] = [
               src: "/work/oca-dtp-revamp/before-after-hero.webp",
               alt: "Before and after of the OCA homepage hero, annotated",
               caption:
-                "Before and after: first impression. The new hero names the category and offers two paths — talk to sales or a 14-day trial with no card.",
+                "Before and after: first impression. The new hero names the category and offers two paths: talk to sales, or a 14-day trial with no card.",
               kind: "artifact",
             },
             wide: true,
@@ -276,7 +276,7 @@ export const caseStudies: CaseStudy[] = [
           {
             kind: "prose",
             body: [
-              "We recruited marketing managers, customer-service managers and business owners who knew SaaS tools but had never used OCA: five people across six sessions, four on desktop and two on mobile. Each played a role — a CS manager looking for an inbox, or a team lead looking for a broadcast tool — and worked through five tasks.",
+              "We recruited marketing managers, customer-service managers and business owners who knew SaaS tools but had never used OCA: five people across six sessions, four on desktop and two on mobile. Each played a role, either a CS manager looking for an inbox or a team lead looking for a broadcast tool, and worked through five tasks.",
             ],
           },
           {
@@ -344,7 +344,7 @@ export const caseStudies: CaseStudy[] = [
     slug: "design-hub",
     title: "Design Hub",
     org: "Telkom Indonesia (OCA)",
-    years: "2022 – present",
+    years: "2022 to present",
     category: "Design leadership, DesignOps",
     platforms: "Organisation, process, design system",
     role: "UX Lead",
@@ -355,7 +355,7 @@ export const caseStudies: CaseStudy[] = [
     summary:
       "Reorganised OCA design from per-squad resourcing into a centralised Design Hub, with one standard workflow, a design system and design QA on every release.",
     challenge:
-      "Five squads — Interaction, AI, Blast & API, Growth and Core — each had their own design rhythm. The same problems were solved differently, handoff varied by person, and no one owned consistency across products.",
+      "Five squads (Interaction, AI, Blast & API, Growth and Core) each had their own design rhythm. The same problems were solved differently, handoff varied by person, and no one owned consistency across products.",
     contribution: [
       "Moved design from per-squad assignment to a Design Hub with one intake and shared priorities.",
       "Standardised intake, review, handoff, documentation and design QA against staging.",
@@ -381,7 +381,7 @@ export const caseStudies: CaseStudy[] = [
           {
             kind: "prose",
             body: [
-              "OCA is a family of products — an omnichannel inbox, bulk messaging, a chatbot builder, APIs — sold to the same mid-to-large companies, BUMN and government teams, and often used by the same people. When each squad had its own designer, each product moved quickly on its own terms. But the seams showed: different patterns for the same task, different levels of documentation, and design QA that depended on who had time.",
+              "OCA is a family of products (an omnichannel inbox, bulk messaging, a chatbot builder, APIs) sold to the same mid-to-large companies, BUMN and government teams, and often used by the same people. When each squad had its own designer, each product moved quickly on its own terms. But the seams showed: different patterns for the same task, different levels of documentation, and design QA that depended on who had time.",
             ],
           },
         ],
@@ -393,11 +393,11 @@ export const caseStudies: CaseStudy[] = [
           {
             kind: "compare",
             before: {
-              label: "Before — per-squad",
+              label: "Before: per-squad",
               items: ["A designer per squad", "Priorities set squad by squad", "Patterns re-solved per product", "Handoff and QA by individual habit"],
             },
             after: {
-              label: "After — Design Hub",
+              label: "After: Design Hub",
               items: [
                 "One team serving five squads",
                 "One intake and shared priorities",
@@ -415,7 +415,7 @@ export const caseStudies: CaseStudy[] = [
           {
             kind: "prose",
             body: [
-              "The hub covers three disciplines — UI design, UX research and UX writing — so a request doesn't just get screens; it gets the words and the evidence too. Day to day I work with Product, Engineering, Marketing, Operations, Legal and Compliance, which means a lot of the job is translation: turning a compliance rule or a sales promise into something a designer can act on.",
+              "The hub covers three disciplines, UI design, UX research and UX writing, so a request doesn't just get screens; it gets the words and the evidence too. Day to day I work with Product, Engineering, Marketing, Operations, Legal and Compliance, which means a lot of the job is translation: turning a compliance rule or a sales promise into something a designer can act on.",
             ],
           },
         ],
@@ -429,7 +429,7 @@ export const caseStudies: CaseStudy[] = [
             items: [
               {
                 title: "Components vs patterns",
-                body: "The design system holds components — the building blocks. The pattern library holds solutions to recurring problems, documented end to end: click Export → drawer → request report → notification → download.",
+                body: "The design system holds components, the building blocks. The pattern library holds solutions to recurring problems, documented end to end: click Export → drawer → request report → notification → download.",
               },
               {
                 title: "Dashboard patterns",
@@ -438,7 +438,7 @@ export const caseStudies: CaseStudy[] = [
               { title: "Guidelines in Figma", body: "File structure, naming and documentation rules so any designer can pick up another's file." },
               {
                 title: "Audits with evidence",
-                body: "UX audits use one format — evidence, finding, severity, recommendation, ideally with a screenshot — so findings can be prioritised alongside engineering work.",
+                body: "UX audits use one format (evidence, finding, severity, recommendation, ideally with a screenshot) so findings can be prioritised alongside engineering work.",
               },
             ],
           },
@@ -451,8 +451,8 @@ export const caseStudies: CaseStudy[] = [
           {
             kind: "prose",
             body: [
-              "We don't have a research budget the size of a consumer app, so we lean on methods that fit a sprint: audits, interviews, moderated and unmoderated tests in Maze, preference and first-impression tests, analytics and competitive reviews. When the WhatsApp Services Report — a screen full of metric cards — had two competing layouts, we ran a quick preference test instead of arguing about it.",
-              "Event tracking follows the same rule. We start from a question and the smallest set of events that answers it — open, submit, success, error — rather than instrumenting everything and hoping a dashboard tells us something.",
+              "We don't have a research budget the size of a consumer app, so we lean on methods that fit a sprint: audits, interviews, moderated and unmoderated tests in Maze, preference and first-impression tests, analytics and competitive reviews. When the WhatsApp Services Report, a screen full of metric cards, had two competing layouts, we ran a quick preference test instead of arguing about it.",
+              "Event tracking follows the same rule. We start from a question and the smallest set of events that answers it (open, submit, success, error) rather than instrumenting everything and hoping a dashboard tells us something.",
             ],
           },
         ],
@@ -464,7 +464,7 @@ export const caseStudies: CaseStudy[] = [
           {
             kind: "prose",
             body: [
-              'The website revamp is a good snapshot. Three UI designers took desktop and mobile; the UX writer wrote the copy and the usability-test scenarios; one designer owned the test report; I owned the problem framing, the IA and the research plan. Nobody was "the Blast designer" or "the website designer" — the work was split by what it needed, and everyone followed the same review, handoff and QA steps.',
+              'The website revamp is a good snapshot. Three UI designers took desktop and mobile; the UX writer wrote the copy and the usability-test scenarios; one designer owned the test report; I owned the problem framing, the IA and the research plan. Nobody was "the Blast designer" or "the website designer". The work was split by what it needed, and everyone followed the same review, handoff and QA steps.',
             ],
           },
           {
@@ -498,17 +498,17 @@ export const caseStudies: CaseStudy[] = [
     slug: "oca-interaction",
     title: "OCA Interaction",
     org: "Telkom Indonesia (OCA)",
-    years: "2020 – present",
+    years: "2020 to present",
     category: "B2B SaaS, CPaaS, Omnichannel",
     platforms: "Web app",
     role: "UX Designer, then UX Lead",
     headline: "Six channels, one queue",
     standfirst:
-      "Customer-service teams were answering WhatsApp, Instagram, email and live chat in separate tools. OCA Interaction puts them in one workspace with tickets, contacts and CSAT — and I've been designing it since it was a concept.",
+      "Customer-service teams were answering WhatsApp, Instagram, email and live chat in separate tools. OCA Interaction puts them in one workspace with tickets, contacts and CSAT. I've been designing it since it was a concept.",
     summary:
-      "Helped build OCA's omnichannel customer-service platform from concept — conversations, ticketing, contacts, chatbot, surveys and CSAT across six channels.",
+      "Helped build OCA's omnichannel customer-service platform from concept: conversations, ticketing, contacts, chatbot, surveys and CSAT across six channels.",
     challenge:
-      "Bring six messaging channels and the work around them — assignment, SLAs, tickets, contact history, surveys, reports — into one tool that agents, supervisors and managers can all use.",
+      "Bring six messaging channels and the work around them (assignment, SLAs, tickets, contact history, surveys, reports) into one tool that agents, supervisors and managers can all use.",
     contribution: [
       "Designed core flows for conversations, ticketing and contacts from the concept stage.",
       "Designed for agents, supervisors, CS managers and marketing managers at mid-to-large companies, BUMN and government.",
@@ -518,9 +518,9 @@ export const caseStudies: CaseStudy[] = [
     outcomes: [
       { value: "2,000+", text: "active users." },
       { value: "Rp10B+", text: "revenue for the product." },
-      { value: "9–10%", text: "of all users tried AI Assistant in its first week." },
+      { value: "9 to 10%", text: "of all users tried AI Assistant in its first week." },
     ],
-    note: "Revenue and user numbers are product results from a whole team — product, engineering, sales and design.",
+    note: "Revenue and user numbers are product results from a whole team: product, engineering, sales and design.",
     depth: "feature",
     tone: "stone",
     sections: [
@@ -542,7 +542,7 @@ export const caseStudies: CaseStudy[] = [
           {
             kind: "prose",
             body: [
-              "For a customer-service team, the inbox isn't a feature — it's where the whole working day happens. We designed for three people with very different days: the agent who needs the next conversation and its history, the supervisor watching queues and SLAs, and the CS or marketing manager who cares about volume, CSAT and what customers keep asking about. Most of them are between 25 and 50 and work for mid-to-large companies, BUMN and government agencies.",
+              "For a customer-service team, the inbox isn't a feature. It's where the whole working day happens. We designed for three people with very different days: the agent who needs the next conversation and its history, the supervisor watching queues and SLAs, and the CS or marketing manager who cares about volume, CSAT and what customers keep asking about. Most of them are between 25 and 50 and work for mid-to-large companies, BUMN and government agencies.",
             ],
           },
         ],
@@ -554,7 +554,7 @@ export const caseStudies: CaseStudy[] = [
           {
             kind: "prose",
             body: [
-              "I joined while Interaction was still a concept and designed the core flows — conversations, ticketing and contacts — that the rest of the product grew around. The inbox settled into a clear pattern: a conversation queue on the left, split by assignee, each with an SLA timer so a waiting customer is visible before they become an angry one; the chat in the middle; ticket and contact context alongside.",
+              "I joined while Interaction was still a concept and designed the core flows (conversations, ticketing and contacts) that the rest of the product grew around. The inbox settled into a clear pattern: a conversation queue on the left, split by assignee, each with an SLA timer so a waiting customer is visible before they become an angry one; the chat in the middle; ticket and contact context alongside.",
               "Channels became first-class objects. A company can connect several WhatsApp numbers, and the channel sidebar lists each one separately, so every number's conversations stay distinct.",
             ],
           },
@@ -594,7 +594,7 @@ export const caseStudies: CaseStudy[] = [
           {
             kind: "prose",
             body: [
-              "As the product matured, the work shifted from inventing flows to keeping a growing product coherent. Reports are where density becomes a problem: managers want a lot on one screen, and too much on one screen tells nobody anything. For the WhatsApp Services Report — a dense grid of metric cards — we ran a quick preference test between two layouts and let users settle it.",
+              "As the product matured, the work shifted from inventing flows to keeping a growing product coherent. Reports are where density becomes a problem: managers want a lot on one screen, and too much on one screen tells nobody anything. For the WhatsApp Services Report, a dense grid of metric cards, we ran a quick preference test between two layouts and let users settle it.",
               "Later work stayed in the same spirit: a WhatsApp Call Report that had to show country quotas across 180+ countries without turning into a phone book, and an exploration of Google Maps Reviews as a channel, so a business could answer reviews from the same inbox as its chats.",
             ],
           },
@@ -621,7 +621,7 @@ export const caseStudies: CaseStudy[] = [
           },
           {
             kind: "prose",
-            body: ["About 9–10% of all users used AI Assistant in its first week."],
+            body: ["About 9 to 10% of all users used AI Assistant in its first week."],
           },
           {
             kind: "gallery",
@@ -658,17 +658,17 @@ export const caseStudies: CaseStudy[] = [
     title: "Vestia",
     org: "Nuwira Integrasi Mandiri",
     client: "Vestia",
-    years: "2018 – 2020",
+    years: "2018 to 2020",
     category: "Fintech, P2P lending",
     platforms: "iOS, Android, web, admin",
     role: "UI/UX Designer (IT consultant)",
     headline: "Getting through KYC without giving up",
     standfirst:
-      "Regulated lending means a long, unavoidable verification flow. The design job was to make each step feel small enough that people actually finish it — and to make lending to a small business feel like lending to someone you understand.",
+      "Regulated lending means a long, unavoidable verification flow. The design job was to make each step feel small enough that people actually finish it, and to make lending to a small business feel like lending to someone you understand.",
     summary:
-      "Designed an OJK-regulated P2P lending platform end to end — onboarding and KYC, the lender marketplace, portfolio and wallet — across iOS, Android, web and admin.",
+      "Designed an OJK-regulated P2P lending platform end to end (onboarding and KYC, the lender marketplace, portfolio and wallet) across iOS, Android, web and admin.",
     challenge:
-      "Meet OJK regulation and ISO 27001 requirements in onboarding — identity, documents, bank account, video verification — without losing people halfway.",
+      "Meet OJK regulation and ISO 27001 requirements in onboarding (identity, documents, bank account, video verification) without losing people halfway.",
     contribution: [
       "Designed onboarding and KYC end to end: registration, OTP, PIN, step-by-step data, guided ID, selfie and NPWP capture, bank account verification and video call verification.",
       "Designed the lender side: a marketplace of SME borrower stories, a portfolio dashboard and a wallet.",
@@ -692,7 +692,7 @@ export const caseStudies: CaseStudy[] = [
           {
             kind: "prose",
             body: [
-              "Vestia connects SME borrowers with lenders under OJK regulation, built to ISO 27001 requirements. Every user has to be verified before money moves. The product lives or dies on whether people make it through — so that's where most of the design went.",
+              "Vestia connects SME borrowers with lenders under OJK regulation, built to ISO 27001 requirements. Every user has to be verified before money moves. The product lives or dies on whether people make it through, so that's where most of the design went.",
             ],
           },
         ],
@@ -725,7 +725,7 @@ export const caseStudies: CaseStudy[] = [
               { title: "A camera that guides", body: "A frame on the camera shows exactly where the document should sit, so the photo passes the first time." },
               {
                 title: "Preview before sending",
-                body: "Users see their photo before it's submitted and can retake it — catching blurry shots before a reviewer does.",
+                body: "Users see their photo before it's submitted and can retake it, catching blurry shots before a reviewer does.",
               },
               {
                 title: "Errors that say what went wrong",
@@ -802,13 +802,13 @@ export const caseStudies: CaseStudy[] = [
     category: "Banking, Offline-first",
     platforms: "Mobile app for field officers, web back office",
     role: "UI/UX Designer (IT consultant)",
-    headline: "Taking a paper process into the field — offline",
+    headline: "Taking a paper process into the field, offline",
     standfirst:
       "Group-lending collection ran on paper. Account officers needed something that works without a signal; the back office needed numbers it could trust at the end of the day.",
     summary:
       "Replaced paper-based field collection with a mobile app for account officers and unit managers that works offline and syncs automatically, plus a web back office for credit admins.",
     challenge:
-      "Collection for Grameen-model group lending — centers, groups, regular and arrears instalments, joint liability — had to work in the field without connectivity and reconcile cleanly afterwards.",
+      "Collection for Grameen-model group lending (centers, groups, regular and arrears instalments, joint liability) had to work in the field without connectivity and reconcile cleanly afterwards.",
     contribution: [
       "Designed the mobile app for Account Officers and Unit Managers: download the day's data, collect offline, upload the collection sheet when back online.",
       "Mapped seven debtor payment states and deposit-slip capture with photo proof.",
@@ -825,7 +825,7 @@ export const caseStudies: CaseStudy[] = [
         blocks: [
           {
             kind: "scene",
-            text: "An account officer sits with a group of borrowers at their center. Some pay their instalment in full, some pay through someone else, one can't pay at all this week. Everything goes into a paper sheet, and the paper goes back to the branch — where someone has to make the numbers add up.",
+            text: "An account officer sits with a group of borrowers at their center. Some pay their instalment in full, some pay through someone else, one can't pay at all this week. Everything goes into a paper sheet, and the paper goes back to the branch, where someone has to make the numbers add up.",
           },
           {
             kind: "prose",
@@ -856,8 +856,8 @@ export const caseStudies: CaseStudy[] = [
           {
             kind: "prose",
             body: [
-              "The home screen is built around one button: Unduh Data — download the data. Officers pull their day before they leave, work offline in the field, and upload when they're back in range. Inside, the app follows the way officers already think: center, then group, then a card per debtor, with anyone in arrears flagged in red. Recording a visit happens in a bottom sheet — payment status, attendance and any titipan — so the officer never loses their place in the list.",
-              "Deposit slips get a photo as proof, the destination account and amount, and whether the money is the officer's own collection or carried for another officer. When the admin confirms a deposit, the officer gets a notification — closing a loop that used to happen on paper.",
+              "The home screen is built around one button: Unduh Data (download data). Officers pull their day before they leave, work offline in the field, and upload when they're back in range. Inside, the app follows the way officers already think: center, then group, then a card per debtor, with anyone in arrears flagged in red. Recording a visit happens in one bottom sheet (payment status, attendance and any titipan), so the officer never loses their place in the list.",
+              "Deposit slips get a photo as proof, the destination account and amount, and whether the money is the officer's own collection or carried for another officer. When the admin confirms a deposit, the officer gets a notification. That closes a loop that used to happen on paper.",
             ],
           },
           {
@@ -907,7 +907,7 @@ export const caseStudies: CaseStudy[] = [
           {
             kind: "prose",
             body: [
-              "Unit managers see collection per unit and per officer, and can assign a replacement officer for the day. Requests to swap officers come with a structured reason — sick, leaving early, arriving late, in training — instead of a free-text message, so the record means something later.",
+              "Unit managers see collection per unit and per officer, and can assign a replacement officer for the day. Requests to swap officers come with a structured reason (sick, leaving early, arriving late, in training) instead of a free-text message, so the record means something later.",
             ],
           },
         ],
@@ -919,7 +919,7 @@ export const caseStudies: CaseStudy[] = [
           {
             kind: "prose",
             body: [
-              "The web back office is for credit administrators and system admins. Its header always shows the Hari Operasional — the operating day — because deposits are tied to the bank's operating day rather than the calendar date.",
+              "The web back office is for credit administrators and system admins. Its header always shows the Hari Operasional, the operating day, because deposits are tied to the bank's operating day rather than the calendar date.",
             ],
           },
           {
@@ -955,21 +955,21 @@ export const caseStudies: CaseStudy[] = [
     slug: "oca-blast",
     title: "OCA Blast",
     org: "Telkom Indonesia (OCA)",
-    years: "2020 – 2025",
+    years: "2020 to 2025",
     category: "Bulk messaging, IA, Redesign",
     platforms: "Web app",
     role: "UX Designer, then UX Lead",
     headline: "Campaigns that stay manageable at scale",
     standfirst:
-      "OCA Blast sends one-way messages in bulk — WhatsApp, email, voice. I've designed for it since my first years at OCA, and from late 2024 led a rework of its information architecture toward a v3.",
+      "OCA Blast sends one-way messages in bulk over WhatsApp, email and voice. I've designed for it since my first years at OCA, and from late 2024 led a rework of its information architecture toward a v3.",
     summary:
       "Redesigned OCA's bulk-messaging product across WhatsApp, email and voice: campaign creation, scheduling, personalisation, projects, contact groups, quotas and reporting.",
     challenge:
-      "As customers ran more campaigns on more channels, the product needed a structure that kept campaigns, contacts, quotas and results findable — and made sending to thousands of people feel safe.",
+      "As customers ran more campaigns on more channels, the product needed a structure that kept campaigns, contacts, quotas and results findable, and made sending to thousands of people feel safe.",
     contribution: [
       "Redesigned the campaign flow: creation, personalisation, scheduling and channel configuration, ending in a review step before anything is sent.",
       "Restructured the IA around projects and reporting (v2 → v3 beta, from Q4 2024).",
-      "Designed across channels — WhatsApp, email and voice — plus contact groups and file management.",
+      "Designed across channels (WhatsApp, email and voice) plus contact groups and file management.",
     ],
     outcomes: [
       { value: "Rp7B → Rp60B+", text: "annual revenue growth for the product." },
@@ -985,7 +985,7 @@ export const caseStudies: CaseStudy[] = [
         blocks: [
           {
             kind: "scene",
-            text: 'A marketing team schedules a WhatsApp promo to every customer in its database. One wrong variable and ten thousand people receive "Hi {first_name}". There\'s no undo on a broadcast — so the interface has to make the right thing easy and the wrong thing visible before the send button.',
+            text: 'A marketing team schedules a WhatsApp promo to every customer in its database. One wrong variable and ten thousand people receive "Hi {first_name}". There\'s no undo on a broadcast, so the interface has to make the right thing easy and the wrong thing visible before the send button.',
           },
           {
             kind: "prose",
@@ -1036,7 +1036,7 @@ export const caseStudies: CaseStudy[] = [
               },
               {
                 title: "Quotas",
-                body: "Remaining quota is always visible, with international quota broken out separately — because sending abroad costs differently and nobody likes surprises on the bill.",
+                body: "Remaining quota is always visible, with international quota broken out separately, because sending abroad costs differently and nobody likes surprises on the bill.",
               },
               { title: "Contact groups and files", body: "Audiences and uploaded files are managed in their own spaces rather than re-uploaded every time." },
               { title: "Reporting", body: "Every campaign has its own report, so the next campaign can learn from the last." },
@@ -1064,20 +1064,20 @@ export const caseStudies: CaseStudy[] = [
     slug: "oca-ai",
     title: "OCA AI",
     org: "Telkom Indonesia (OCA)",
-    years: "2020 – 2022",
+    years: "2020 to 2022",
     category: "AI, No-code chatbot builder",
     platforms: "Web app",
-    role: "UX Designer — initiated the design direction",
+    role: "UX Designer, initiated the design direction",
     headline: "A chatbot builder for teams who don't code",
     standfirst:
       "Enterprise teams wanted chatbots, but every change meant waiting for an engineer. OCA AI turns bot design into a visual canvas. I initiated its design direction from scratch and stayed with it from concept to go-to-market.",
     summary: "Initiated the design of a no-code visual chatbot builder for enterprise conversational automation, from discovery to go-to-market.",
     challenge:
-      "Make bot design something operations and CS teams can create and maintain themselves — without hiding the logic that makes a bot behave correctly.",
+      "Make bot design something operations and CS teams can create and maintain themselves, without hiding the logic that makes a bot behave correctly.",
     contribution: [
       "Initiated the product's design direction from scratch.",
       "Designed the drag-and-drop canvas editor so non-technical teams can build and maintain bot flows.",
-      "Designed the surrounding product — AI Plus and bot reports — and worked with product, engineering and marketing through launch.",
+      "Designed the surrounding product (AI Plus and bot reports) and worked with product, engineering and marketing through launch.",
     ],
     outcomes: [{ text: "Launched as a new, revenue-generating product line in the OCA ecosystem." }],
     note: "Adoption figures aren't included here.",
@@ -1095,7 +1095,7 @@ export const caseStudies: CaseStudy[] = [
           {
             kind: "prose",
             body: [
-              "OCA AI started from that gap. The people who know what a bot should say — CS and operations teams — were the ones least able to change it. The goal was a builder they could use themselves, for enterprise conversational automation, without writing code.",
+              "OCA AI started from that gap. The people who know what a bot should say, the CS and operations teams, were the ones least able to change it. The goal was a builder they could use themselves, for enterprise conversational automation, without writing code.",
             ],
           },
         ],
@@ -1107,8 +1107,8 @@ export const caseStudies: CaseStudy[] = [
           {
             kind: "prose",
             body: [
-              "The core of OCA AI is a canvas editor. A bot is a flow you can see: blocks connected by lines, each block a step in the conversation. Teams drag a response type onto the canvas, connect it, and open a Bot Response panel to fill in what the bot says. The response types are the vocabulary of the product — the set of things a bot can do — so making that list clear mattered as much as the canvas itself.",
-              "The trade-off of no-code is always the same: hide too much and people can't understand why the bot did something; show too much and they're back to programming. A visual flow sits in the middle — the logic is on screen, but nobody has to write it.",
+              "The core of OCA AI is a canvas editor. A bot is a flow you can see: blocks connected by lines, each block a step in the conversation. Teams drag a response type onto the canvas, connect it, and open a Bot Response panel to fill in what the bot says. The response types are the vocabulary of the product, the set of things a bot can do, so making that list clear mattered as much as the canvas itself.",
+              "The trade-off of no-code is always the same: hide too much and people can't understand why the bot did something; show too much and they're back to programming. A visual flow sits in the middle: the logic is on screen, but nobody has to write it.",
             ],
           },
           {
@@ -1146,7 +1146,7 @@ export const caseStudies: CaseStudy[] = [
           {
             kind: "prose",
             body: [
-              "I was there from the first concept through go-to-market. Around the canvas, the product grew to include AI Plus and bot reports. OCA AI launched as its own product line in the OCA ecosystem and generates revenue — and, later, it became one of the five squads I support as UX Lead.",
+              "I was there from the first concept through go-to-market. Around the canvas, the product grew to include AI Plus and bot reports. OCA AI launched as its own product line in the OCA ecosystem and generates revenue. Later, it became one of the five squads I support as UX Lead.",
             ],
           },
         ],
@@ -1160,7 +1160,7 @@ export const caseStudies: CaseStudy[] = [
     title: "Coconut sugar traceability",
     org: "Nuwira Integrasi Mandiri",
     client: "Central Agro Lestari",
-    years: "2018 – 2020",
+    years: "2018 to 2020",
     category: "Supply chain, Manufacturing",
     platforms: "Admin web, desktop stations, mobile, landing page",
     role: "UI/UX Designer (IT consultant)",
@@ -1170,7 +1170,7 @@ export const caseStudies: CaseStudy[] = [
     summary:
       "Designed a barcode traceability system for a coconut sugar factory, from land and farmer to finished goods, across admin web, desktop stations and mobile.",
     challenge:
-      "Connect a chain of people and places — farmers, collectors, warehouse, production, packing — so every product carries its history, on a factory floor where people work in shifts.",
+      "Connect a chain of people and places (farmers, collectors, warehouse, production, packing) so every product carries its history, on a factory floor where people work in shifts.",
     contribution: [
       "Mapped each station as a flowchart before any UI: purchasing, raw material in/out/rejected, production, packing.",
       "Designed scan-first desktop stations with employee-ID login, shift handover and barcode printing at intake.",
@@ -1208,7 +1208,7 @@ export const caseStudies: CaseStudy[] = [
           {
             kind: "prose",
             body: [
-              "The design files also carry organic certification marks — USDA, EU and Control Union. Certifications like these depend on exactly this kind of chain: proof of where every input came from.",
+              "The design files also carry organic certification marks from USDA, EU and Control Union. Certifications like these depend on exactly this kind of chain: proof of where every input came from.",
             ],
           },
         ],
@@ -1220,7 +1220,7 @@ export const caseStudies: CaseStudy[] = [
           {
             kind: "prose",
             body: [
-              "Before any UI, I drew every station as a flowchart. Purchasing: log in, scan the employee ID, scan or enter the seller, scan the product, record type and quality, repeat until done — then the system creates a product ID and prints a barcode. The raw-material warehouse splits three ways: goods come in (into a lot, or a new lot if none fits), go out, or get rejected with a reason. Once those paths were agreed, the screens almost designed themselves.",
+              "Before any UI, I drew every station as a flowchart. Purchasing: log in, scan the employee ID, scan or enter the seller, scan the product, record type and quality, repeat until done. Then the system creates a product ID and prints a barcode. The raw-material warehouse splits three ways: goods come in (into a lot, or a new lot if none fits), go out, or get rejected with a reason. Once those paths were agreed, the screens almost designed themselves.",
             ],
           },
         ],
@@ -1234,7 +1234,7 @@ export const caseStudies: CaseStudy[] = [
             items: [
               {
                 title: "Scan to log in",
-                body: "Workers log in by scanning their employee ID, and a sidebar shows who's active at the station — built for shift changes, not passwords.",
+                body: "Workers log in by scanning their employee ID, and a sidebar shows who's active at the station. It's built for shift changes, not passwords.",
               },
               {
                 title: "Purchasing",
@@ -1242,7 +1242,7 @@ export const caseStudies: CaseStudy[] = [
               },
               {
                 title: "Production",
-                body: "Batches per product — powder, liquid and moulded — each with a target. Stages run from adding raw material to oven and evaporation, sieving and sorting, each with start and finish, a progress bar, and a way to hand over to another worker mid-process.",
+                body: "Batches per product (powder, liquid and moulded), each with a target. Stages run from adding raw material to oven and evaporation, sieving and sorting, each with start and finish, a progress bar, and a way to hand over to another worker mid-process.",
               },
               { title: "Packing and finished goods", body: "The last scans in the chain, tying each packed product back to its batch." },
             ],
@@ -1266,7 +1266,7 @@ export const caseStudies: CaseStudy[] = [
           {
             kind: "prose",
             body: [
-              "The first link isn't in the factory at all. A mobile admin app records the land: owner, block, number of coconut trees, area, the four boundaries and GPS coordinates, with a button to grab the current location. One question changes the form — is sap tapped here? If yes, the app asks which farmers work the land, how many trees each taps and how much they produce. It also records the last chemical fertiliser and any other crops, the kind of detail an organic audit asks about.",
+              "The first link isn't in the factory at all. A mobile admin app records the land: owner, block, number of coconut trees, area, the four boundaries and GPS coordinates, with a button to grab the current location. One question changes the form: is sap tapped here? If yes, the app asks which farmers work the land, how many trees each taps and how much they produce. It also records the last chemical fertiliser and any other crops, the kind of detail an organic audit asks about.",
               "Around the system I also designed the product labels, sized in centimetres for print, the documents and a landing page.",
             ],
           },
