@@ -54,7 +54,7 @@ If configuration is missing, the endpoint returns `503 not_configured` and the f
 
 | Variable | Required | Purpose |
 | --- | --- | --- |
-| `NEXT_PUBLIC_SITE_URL` | Recommended | Canonical URL, sitemap, Open Graph. e.g. `https://mesakh-portfolio.vercel.app` |
+| `NEXT_PUBLIC_SITE_URL` | Recommended | Canonical URL, sitemap, Open Graph. e.g. `https://portfolio-seven-rosy-n0lxz8d004.vercel.app` |
 | `RESEND_API_KEY` | For CV email | Resend API key |
 | `CV_REQUEST_FROM_EMAIL` | For CV email | Sender on a domain verified in Resend, e.g. `Mesakh <cv@yourdomain.com>` |
 | `CV_NOTIFICATION_EMAIL` | Optional | Your inbox for request notifications; also used as reply-to |

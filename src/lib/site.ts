@@ -1,4 +1,4 @@
-export const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://mesakh-portfolio.vercel.app").replace(/\/$/, "");
+export const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://portfolio-seven-rosy-n0lxz8d004.vercel.app").replace(/\/$/, "");
 
 export const siteName = "Mesakh — UX Lead & Product Designer";
 export const siteDescription =

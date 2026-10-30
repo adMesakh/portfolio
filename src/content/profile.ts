@@ -24,7 +24,7 @@ export const profile = {
       { text: ", " },
       { text: "field collection tools", note: "DMB. Offline-first collection for group lending.", href: "/work/dmb-collection" },
       { text: " — and build " },
-      { text: "the design teams that ship it", note: "Design Hub. One design team serving five squads at OCA.", href: "/work/design-hub" },
+      { text: "the design teams that ship\u00A0it", note: "Design Hub. One design team serving five squads at OCA.", href: "/work/design-hub" },
       { text: "." },
     ] as { text: string; note?: string; href?: string }[],
     lede:
