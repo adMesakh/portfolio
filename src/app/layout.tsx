@@ -3,7 +3,7 @@ import Link from "next/link";
 import "./globals.css";
 import { grotesk, serif, serifItalic } from "@/lib/fonts";
 import { Header } from "@/components/Header";
-import { CvDialog } from "@/components/CvRequest";
+import { CvBand } from "@/components/CvRequest";
 import { modeBootScript } from "@/components/ModeToggle";
 import { siteDescription, siteName, siteUrl, footerNav } from "@/lib/site";
 import { profile } from "@/content/profile";
@@ -57,6 +57,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </a>
         <Header />
         <main id="main">{children}</main>
+        <CvBand />
         <footer className="border-t border-[var(--line)] mt-0">
           <div className="wrap py-10 grid gap-6 sm:grid-cols-[1fr_auto] text-[0.9375rem]">
             <div className="grid gap-1">
@@ -81,7 +82,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </ul>
           </div>
         </footer>
-        <CvDialog />
       </body>
     </html>
   );

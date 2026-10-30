@@ -1,26 +1,18 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useEffect, useId, useRef, useState } from "react";
 import { profile } from "@/content/profile";
 import { isValidEmail } from "@/lib/email";
 
-const OPEN_EVENT = "open-cv-request";
-
-export function CvButton({ variant = "solid", label = "Request my CV" }: { variant?: "solid" | "ghost"; label?: string }) {
-  return (
-    <button
-      type="button"
-      className={"btn" + (variant === "ghost" ? " btn--ghost" : "")}
-      onClick={() => window.dispatchEvent(new Event(OPEN_EVENT))}
-    >
-      {label}
-    </button>
-  );
-}
-
 type Status = "idle" | "submitting" | "success" | "error" | "unavailable" | "limited";
 
-export function CvForm({ headingLevel = 2, onDone }: { headingLevel?: 2 | 3; onDone?: () => void }) {
+/**
+ * The CV request form.
+ * - "stack": heading above fields (Contact page).
+ * - "band": heading on the left, fields on the right (the band before the footer).
+ */
+export function CvForm({ variant = "stack", headingLevel = 2 }: { variant?: "stack" | "band"; headingLevel?: 2 | 3 }) {
   const id = useId();
   const [email, setEmail] = useState("");
   const [touched, setTouched] = useState(false);
@@ -33,6 +25,7 @@ export function CvForm({ headingLevel = 2, onDone }: { headingLevel?: 2 | 3; onD
 
   const invalid = touched && !isValidEmail(email);
   const H = headingLevel === 2 ? "h2" : "h3";
+  const band = variant === "band";
 
   async function submit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -60,33 +53,32 @@ export function CvForm({ headingLevel = 2, onDone }: { headingLevel?: 2 | 3; onD
     }
   }
 
+  const heading = (
+    <div className="grid gap-2">
+      <H className={band ? "h2 max-w-[18ch]" : "h2 max-w-[22ch]"}>Want to know more about my experience?</H>
+      <p className="lede">Leave your email address and I&apos;ll send you a copy of my latest CV.</p>
+    </div>
+  );
+
   if (status === "success") {
     return (
-      <div role="status" className="grid gap-3">
-        <H className="h3">Request received</H>
-        <p className="lede text-[var(--fg)]">Your request has been received. Check your inbox for my CV.</p>
-        {onDone && (
-          <div>
-            <button type="button" className="btn btn--ghost" onClick={onDone}>
-              Close
-            </button>
-          </div>
-        )}
+      <div role="status" className={band ? "grid gap-8 lg:grid-cols-12 lg:gap-x-10 items-end" : "grid gap-3"}>
+        <div className={band ? "lg:col-span-6" : ""}>
+          <H className="h2">Request received</H>
+        </div>
+        <p className={"lede text-[var(--fg)] " + (band ? "lg:col-span-5 lg:col-start-8" : "")}>
+          Your request has been received. Check your inbox for my CV.
+        </p>
       </div>
     );
   }
 
-  return (
-    <form onSubmit={submit} noValidate className="grid gap-4">
-      <div className="grid gap-2">
-        <H className="h2 max-w-[22ch]">Want to know more about my experience?</H>
-        <p className="lede">Leave your email address and I&apos;ll send you a copy of my latest CV.</p>
-      </div>
-
-      <div className="grid gap-1.5">
-        <label htmlFor={`${id}-email`} className="text-[0.9375rem] font-[560]">
-          Email address
-        </label>
+  const fields = (
+    <form onSubmit={submit} noValidate className="grid gap-3">
+      <label htmlFor={`${id}-email`} className="text-[0.9375rem] font-[560]">
+        Email address
+      </label>
+      <div className={band ? "flex flex-col sm:flex-row gap-3" : "grid gap-3"}>
         <input
           id={`${id}-email`}
           name="email"
@@ -95,7 +87,7 @@ export function CvForm({ headingLevel = 2, onDone }: { headingLevel?: 2 | 3; onD
           autoComplete="email"
           required
           placeholder="Your work email address"
-          className="field"
+          className="field flex-1"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           onBlur={() => setTouched(true)}
@@ -103,12 +95,15 @@ export function CvForm({ headingLevel = 2, onDone }: { headingLevel?: 2 | 3; onD
           aria-describedby={`${id}-help${invalid ? ` ${id}-err` : ""}`}
           disabled={status === "submitting"}
         />
-        {invalid && (
-          <p id={`${id}-err`} className="text-[0.875rem] text-[#b4233c]">
-            Enter an email address like name@company.com.
-          </p>
-        )}
+        <button type="submit" className="btn justify-center whitespace-nowrap" disabled={status === "submitting"}>
+          {status === "submitting" ? "Sending…" : "Request CV"}
+        </button>
       </div>
+      {invalid && (
+        <p id={`${id}-err`} className="text-[0.875rem] text-[#b4233c]">
+          Enter an email address like name@company.com.
+        </p>
+      )}
 
       {/* Honeypot: hidden from people, tempting to bots. */}
       <div aria-hidden="true" className="absolute -left-[9999px] w-px h-px overflow-hidden">
@@ -122,12 +117,6 @@ export function CvForm({ headingLevel = 2, onDone }: { headingLevel?: 2 | 3; onD
         Your email is used only to send the CV and to let me know who asked. It isn&apos;t added to a mailing list,
         stored in a database or shared.
       </p>
-
-      <div className="flex flex-wrap items-center gap-4">
-        <button type="submit" className="btn" disabled={status === "submitting"}>
-          {status === "submitting" ? "Sending…" : "Request CV"}
-        </button>
-      </div>
 
       <div aria-live="polite" className="text-[0.9375rem]">
         {status === "error" && <p className="text-[#b4233c]">Something went wrong. Please try again.</p>}
@@ -146,41 +135,33 @@ export function CvForm({ headingLevel = 2, onDone }: { headingLevel?: 2 | 3; onD
       </div>
     </form>
   );
-}
 
-/** One dialog for the whole site, opened by any CvButton. */
-export function CvDialog() {
-  const ref = useRef<HTMLDialogElement>(null);
-  const [key, setKey] = useState(0);
-
-  useEffect(() => {
-    const open = () => {
-      setKey((k) => k + 1);
-      ref.current?.showModal();
-    };
-    window.addEventListener(OPEN_EVENT, open);
-    return () => window.removeEventListener(OPEN_EVENT, open);
-  }, []);
-
-  const close = () => ref.current?.close();
+  if (band) {
+    return (
+      <div className="grid gap-8 lg:grid-cols-12 lg:gap-x-10 items-end">
+        <div className="lg:col-span-6">{heading}</div>
+        <div className="lg:col-span-5 lg:col-start-8">{fields}</div>
+      </div>
+    );
+  }
 
   return (
-    <dialog
-      ref={ref}
-      className="sheet"
-      aria-label="Request my CV"
-      onClick={(e) => {
-        if (e.target === ref.current) close();
-      }}
-    >
-      <div className="h-full overflow-y-auto p-6 sm:p-10 flex flex-col gap-8">
-        <div className="flex justify-end">
-          <button type="button" onClick={close} className="min-h-11 px-2 -mr-2 font-[560] cursor-pointer hover:text-[var(--accent)]">
-            Close
-          </button>
-        </div>
-        <CvForm key={key} onDone={close} />
+    <div className="grid gap-6">
+      {heading}
+      {fields}
+    </div>
+  );
+}
+
+/** The CV request band, shown right before the footer on every page except Contact. */
+export function CvBand() {
+  const pathname = usePathname();
+  if (pathname === "/contact") return null;
+  return (
+    <section id="cv" aria-label="Request my CV" className="tone-stone border-t border-[var(--line)] scroll-mt-16">
+      <div className="wrap py-14 lg:py-20">
+        <CvForm variant="band" />
       </div>
-    </dialog>
+    </section>
   );
 }

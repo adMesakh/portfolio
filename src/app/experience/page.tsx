@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { caseStudies } from "@/content/case-studies";
 import { experience, profile } from "@/content/profile";
-import { CvButton } from "@/components/CvRequest";
 
 export const metadata: Metadata = {
   title: "Experience",
@@ -20,9 +19,6 @@ export default function ExperiencePage() {
         </h1>
         <div className="lg:col-span-4 lg:col-start-9 self-end grid gap-4">
           <p className="lede">{profile.years} years in UI/UX and product design across CPaaS, SaaS, fintech and banking.</p>
-          <div>
-            <CvButton variant="ghost" />
-          </div>
         </div>
       </header>
 

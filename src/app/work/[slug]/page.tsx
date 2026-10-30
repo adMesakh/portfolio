@@ -5,7 +5,6 @@ import { caseStudies, getCaseStudy } from "@/content/case-studies";
 import { Blocks } from "@/components/blocks/Blocks";
 import { ModeLink } from "@/components/ModeToggle";
 import { ReadingProgress } from "@/components/ReadingProgress";
-import { CvButton } from "@/components/CvRequest";
 
 type Params = { slug: string };
 
@@ -188,9 +187,6 @@ export default async function CaseStudyPage({ params }: { params: Promise<Params
             <Link href={`/work/${next.slug}`} className="h2 hover:text-[var(--accent)] transition-colors">
               {next.title}: {next.headline}
             </Link>
-          </div>
-          <div className="lg:col-span-4 flex flex-wrap gap-3 lg:justify-end">
-            <CvButton variant="ghost" />
           </div>
         </div>
       </nav>

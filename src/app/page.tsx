@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { caseStudies, featuredSlugs, getCaseStudy } from "@/content/case-studies";
 import { experience, leadership, otherWork, principles, profile } from "@/content/profile";
-import { CvButton } from "@/components/CvRequest";
 import { Blocks } from "@/components/blocks/Blocks";
 import type { CaseStudy } from "@/content/types";
 
@@ -77,7 +76,6 @@ function StoryHome() {
             <a href="#work" className="btn">
               See selected work
             </a>
-            <CvButton variant="ghost" />
             <Link href="/contact" className="btn btn--ghost">
               Get in touch
             </Link>
@@ -371,9 +369,6 @@ function ContactBand() {
           <a href="https://www.linkedin.com/in/admesakh" className="link" rel="me noopener">
             LinkedIn: in/admesakh
           </a>
-          <div className="mt-2">
-            <CvButton label="Request my CV" />
-          </div>
         </div>
       </div>
     </section>
@@ -400,8 +395,7 @@ function BriefHome() {
           <p className="text-[1.375rem] font-[560] mt-2">{profile.title}</p>
           <p className="lede mt-5 text-[var(--fg)]">{profile.brief}</p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <CvButton />
-            <a href={`mailto:${profile.email}`} className="btn btn--ghost">
+            <a href={`mailto:${profile.email}`} className="btn">
               Email me
             </a>
           </div>
@@ -581,9 +575,6 @@ function BriefHome() {
               linkedin.com/in/admesakh
             </a>
             <p className="text-[var(--fg-soft)] mt-2">{profile.availability}</p>
-            <div className="mt-3">
-              <CvButton />
-            </div>
           </div>
         </div>
       </section>
